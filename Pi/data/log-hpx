@@ -1,0 +1,86 @@
+
+Input:[10]
+Steps: 10.000000; Pi=3.142426
+seconds: 0.0001128
+localities: 1
+threads/locality: 20
+Steps: 10.000000; Pi=3.142426
+seconds: 0.0001563
+localities: 1
+threads/locality: 20
+Steps: 10.000000; Pi=3.142426
+seconds: 0.0001391
+localities: 1
+threads/locality: 20
+
+Input:[100]
+Steps: 100.000000; Pi=3.141601
+seconds: 0.0010119
+localities: 1
+threads/locality: 20
+Steps: 100.000000; Pi=3.141601
+seconds: 0.0009340
+localities: 1
+threads/locality: 20
+Steps: 100.000000; Pi=3.141601
+seconds: 0.0009003
+localities: 1
+threads/locality: 20
+
+Input:[1000]
+Steps: 1000.000000; Pi=3.141593
+seconds: 0.0089149
+localities: 1
+threads/locality: 20
+Steps: 1000.000000; Pi=3.141593
+seconds: 0.0085381
+localities: 1
+threads/locality: 20
+Steps: 1000.000000; Pi=3.141593
+seconds: 0.0084862
+localities: 1
+threads/locality: 20
+
+Input:[10000]
+Steps: 10000.000000; Pi=3.141593
+seconds: 0.0867803
+localities: 1
+threads/locality: 20
+Steps: 10000.000000; Pi=3.141593
+seconds: 0.0874198
+localities: 1
+threads/locality: 20
+Steps: 10000.000000; Pi=3.141593
+seconds: 0.0893617
+localities: 1
+threads/locality: 20
+
+Input:[100000]
+Steps: 100000.000000; Pi=3.141593
+seconds: 0.8882782
+localities: 1
+threads/locality: 20
+Steps: 100000.000000; Pi=3.141593
+seconds: 0.8722463
+localities: 1
+threads/locality: 20
+Steps: 100000.000000; Pi=3.141593
+seconds: 0.8900695
+localities: 1
+threads/locality: 20
+
+Input:[1000000]
+Steps: 1000000.000000; Pi=3.141593
+seconds: 9.4038088
+localities: 1
+threads/locality: 20
+Steps: 1000000.000000; Pi=3.141593
+seconds: 9.4433975
+localities: 1
+threads/locality: 20
+Steps: 1000000.000000; Pi=3.141593
+seconds: 9.4077272
+localities: 1
+threads/locality: 20
+
+Input:[10000000]

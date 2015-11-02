@@ -1,0 +1,88 @@
+
+Threads:[1]
+Computing 16-Queens algorithm
+OpenMP Work took 2310.846394 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 2306.510861 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 2303.970047 sec.
+RESULT_SUCCESSFUL!
+
+Threads:[2]
+Computing 16-Queens algorithm
+OpenMP Work took 4540.513955 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 3924.523071 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 3942.142259 sec.
+RESULT_SUCCESSFUL!
+
+Threads:[4]
+Computing 16-Queens algorithm
+OpenMP Work took 1956.972583 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 1957.114197 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 1954.659705 sec.
+RESULT_SUCCESSFUL!
+
+Threads:[6]
+Computing 16-Queens algorithm
+OpenMP Work took 1311.690750 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 1310.276057 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 1307.782488 sec.
+RESULT_SUCCESSFUL!
+
+Threads:[8]
+Computing 16-Queens algorithm
+OpenMP Work took 983.647280 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 983.121568 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 989.379054 sec.
+RESULT_SUCCESSFUL!
+
+Threads:[10]
+Computing 16-Queens algorithm
+OpenMP Work took 787.624176 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 789.318697 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 790.341793 sec.
+RESULT_SUCCESSFUL!
+
+Threads:[15]
+Computing 16-Queens algorithm
+OpenMP Work took 524.447463 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 525.919424 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 526.192371 sec.
+RESULT_SUCCESSFUL!
+
+Threads:[20]
+Computing 16-Queens algorithm
+OpenMP Work took 450.187506 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 409.136666 sec.
+RESULT_SUCCESSFUL!
+Computing 16-Queens algorithm
+OpenMP Work took 401.078009 sec.
+RESULT_SUCCESSFUL!

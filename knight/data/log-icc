@@ -1,0 +1,119 @@
+
+Input:[3]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 3
+OpenMP Work took 0.009919 sec.
+
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 3
+OpenMP Work took 0.003723 sec.
+
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 3
+OpenMP Work took 0.004368 sec.
+
+
+Input:[4]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 4
+OpenMP Work took 0.000149 sec.
+
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 4
+OpenMP Work took 0.018526 sec.
+
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 4
+OpenMP Work took 0.005378 sec.
+
+
+Input:[5]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 5
+OpenMP Work took 0.004083 sec.
+
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 5
+OpenMP Work took 0.019338 sec.
+
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 5
+OpenMP Work took 0.009786 sec.
+
+
+Input:[6]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 6
+OpenMP Work took 0.243923 sec.
+
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 6
+OpenMP Work took 0.224130 sec.
+
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 6
+OpenMP Work took 0.243382 sec.
+
+
+Input:[7]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 7
+OpenMP Work took 0.007179 sec.
+
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 7
+OpenMP Work took 0.017324 sec.
+
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 7
+OpenMP Work took 0.018197 sec.
+
+
+Input:[8]
+
+Input:[9]

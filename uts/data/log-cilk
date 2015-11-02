@@ -1,0 +1,16 @@
+
+../input/toy.input, 0.060 sec
+../input/toy.input, 0.066 sec
+../input/toy.input, 0.065 sec
+../input/toy.input, 0.077 sec
+../input/toy.input, 0.067 sec
+
+../input/test.input, 0.068 sec
+../input/test.input, 0.072 sec
+../input/test.input, 0.075 sec
+../input/test.input, 0.077 sec
+../input/test.input, 0.073 sec
+
+../input/tiny.input, ../input/tiny.input, ../input/tiny.input, ../input/tiny.input, ../input/tiny.input, 
+../input/small.input, ../input/small.input, ../input/small.input, ../input/small.input, ../input/small.input, 
+../input/medium.input, ../input/medium.input, ../input/medium.input, ../input/medium.input, ../input/medium.input, 

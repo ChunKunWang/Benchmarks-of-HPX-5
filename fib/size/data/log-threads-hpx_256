@@ -1,0 +1,112 @@
+
+Threads:[1]
+fib(45)=1134903170
+seconds: 2661.2532770
+localities: 1
+threads/locality: 1
+fib(45)=1134903170
+seconds: 2663.4105240
+localities: 1
+threads/locality: 1
+fib(45)=1134903170
+seconds: 2657.4525703
+localities: 1
+threads/locality: 1
+
+Threads:[2]
+fib(45)=1134903170
+seconds: 1326.3313056
+localities: 1
+threads/locality: 2
+fib(45)=1134903170
+seconds: 1332.9206978
+localities: 1
+threads/locality: 2
+fib(45)=1134903170
+seconds: 1332.4663789
+localities: 1
+threads/locality: 2
+
+Threads:[4]
+fib(45)=1134903170
+seconds: 666.4439754
+localities: 1
+threads/locality: 4
+fib(45)=1134903170
+seconds: 676.7795569
+localities: 1
+threads/locality: 4
+fib(45)=1134903170
+seconds: 665.7998733
+localities: 1
+threads/locality: 4
+
+Threads:[6]
+fib(45)=1134903170
+seconds: 442.9447798
+localities: 1
+threads/locality: 6
+fib(45)=1134903170
+seconds: 442.7729545
+localities: 1
+threads/locality: 6
+fib(45)=1134903170
+seconds: 449.1410388
+localities: 1
+threads/locality: 6
+
+Threads:[8]
+fib(45)=1134903170
+seconds: 332.5804017
+localities: 1
+threads/locality: 8
+fib(45)=1134903170
+seconds: 369.2337881
+localities: 1
+threads/locality: 8
+fib(45)=1134903170
+seconds: 332.7586670
+localities: 1
+threads/locality: 8
+
+Threads:[10]
+fib(45)=1134903170
+seconds: 266.1891255
+localities: 1
+threads/locality: 10
+fib(45)=1134903170
+seconds: 266.1929392
+localities: 1
+threads/locality: 10
+fib(45)=1134903170
+seconds: 299.9302956
+localities: 1
+threads/locality: 10
+
+Threads:[15]
+fib(45)=1134903170
+seconds: 178.3414156
+localities: 1
+threads/locality: 15
+fib(45)=1134903170
+seconds: 177.6760857
+localities: 1
+threads/locality: 15
+fib(45)=1134903170
+seconds: 177.6413870
+localities: 1
+threads/locality: 15
+
+Threads:[20]
+fib(45)=1134903170
+seconds: 149.4731365
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 165.5931175
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 148.1050131
+localities: 1
+threads/locality: 20

@@ -1,0 +1,280 @@
+
+Tasks:[0]
+../input/toy.input, 0.233 sec
+../input/toy.input, 0.220 sec
+../input/toy.input, 0.231 sec
+../input/toy.input, 0.214 sec
+../input/toy.input, 0.225 sec
+
+Tasks:[2]
+../input/toy.input, 0.230 sec
+../input/toy.input, 0.236 sec
+../input/toy.input, 0.223 sec
+../input/toy.input, 0.224 sec
+../input/toy.input, 0.243 sec
+
+Tasks:[4]
+../input/toy.input, 0.243 sec
+../input/toy.input, 0.232 sec
+../input/toy.input, 0.242 sec
+../input/toy.input, 0.242 sec
+../input/toy.input, 0.227 sec
+
+Tasks:[6]
+../input/toy.input, 0.233 sec
+../input/toy.input, 0.225 sec
+../input/toy.input, 0.237 sec
+../input/toy.input, 0.225 sec
+../input/toy.input, 0.246 sec
+
+Tasks:[8]
+../input/toy.input, 0.239 sec
+../input/toy.input, 0.240 sec
+../input/toy.input, 0.238 sec
+../input/toy.input, 0.225 sec
+../input/toy.input, 0.227 sec
+
+Tasks:[10]
+../input/toy.input, 0.239 sec
+../input/toy.input, 0.243 sec
+../input/toy.input, 0.224 sec
+../input/toy.input, 0.243 sec
+../input/toy.input, 0.229 sec
+
+Tasks:[16]
+../input/toy.input, 0.241 sec
+../input/toy.input, 0.237 sec
+../input/toy.input, 0.223 sec
+../input/toy.input, 0.227 sec
+../input/toy.input, 0.223 sec
+
+Tasks:[20]
+../input/toy.input, 0.248 sec
+../input/toy.input, 0.235 sec
+../input/toy.input, 0.239 sec
+../input/toy.input, 0.243 sec
+../input/toy.input, 0.244 sec
+
+Tasks:[0]
+../input/test.input, 0.454 sec
+../input/test.input, 0.479 sec
+../input/test.input, 0.472 sec
+../input/test.input, 0.467 sec
+../input/test.input, 0.471 sec
+
+Tasks:[2]
+../input/test.input, 0.466 sec
+../input/test.input, 0.471 sec
+../input/test.input, 0.465 sec
+../input/test.input, 0.524 sec
+../input/test.input, 0.470 sec
+
+Tasks:[4]
+../input/test.input, 0.482 sec
+../input/test.input, 0.502 sec
+../input/test.input, 0.499 sec
+../input/test.input, 0.494 sec
+../input/test.input, 0.484 sec
+
+Tasks:[6]
+../input/test.input, 0.490 sec
+../input/test.input, 0.484 sec
+../input/test.input, 0.462 sec
+../input/test.input, 0.483 sec
+../input/test.input, 0.455 sec
+
+Tasks:[8]
+../input/test.input, 0.480 sec
+../input/test.input, 0.478 sec
+../input/test.input, 0.484 sec
+../input/test.input, 0.468 sec
+../input/test.input, 0.482 sec
+
+Tasks:[10]
+../input/test.input, 0.485 sec
+../input/test.input, 0.462 sec
+../input/test.input, 0.467 sec
+../input/test.input, 0.490 sec
+../input/test.input, 0.477 sec
+
+Tasks:[16]
+../input/test.input, 0.480 sec
+../input/test.input, 0.465 sec
+../input/test.input, 0.481 sec
+../input/test.input, 0.480 sec
+../input/test.input, 0.479 sec
+
+Tasks:[20]
+../input/test.input, 0.508 sec
+../input/test.input, 0.494 sec
+../input/test.input, 0.469 sec
+../input/test.input, 0.479 sec
+../input/test.input, 0.491 sec
+
+Tasks:[0]
+../input/tiny.input, 3.825 sec
+../input/tiny.input, 3.684 sec
+../input/tiny.input, 3.744 sec
+../input/tiny.input, 3.656 sec
+../input/tiny.input, 3.678 sec
+
+Tasks:[2]
+../input/tiny.input, 3.696 sec
+../input/tiny.input, 3.725 sec
+../input/tiny.input, 3.738 sec
+../input/tiny.input, 3.649 sec
+../input/tiny.input, 3.725 sec
+
+Tasks:[4]
+../input/tiny.input, 3.662 sec
+../input/tiny.input, 3.668 sec
+../input/tiny.input, 3.715 sec
+../input/tiny.input, 3.696 sec
+../input/tiny.input, 3.741 sec
+
+Tasks:[6]
+../input/tiny.input, 3.742 sec
+../input/tiny.input, 3.792 sec
+../input/tiny.input, 3.721 sec
+../input/tiny.input, 3.743 sec
+../input/tiny.input, 3.770 sec
+
+Tasks:[8]
+../input/tiny.input, 3.770 sec
+../input/tiny.input, 3.741 sec
+../input/tiny.input, 3.717 sec
+../input/tiny.input, 3.743 sec
+../input/tiny.input, 3.751 sec
+
+Tasks:[10]
+../input/tiny.input, 3.834 sec
+../input/tiny.input, 3.629 sec
+../input/tiny.input, 3.692 sec
+../input/tiny.input, 3.753 sec
+../input/tiny.input, 3.728 sec
+
+Tasks:[16]
+../input/tiny.input, 3.652 sec
+../input/tiny.input, 3.853 sec
+../input/tiny.input, 3.707 sec
+../input/tiny.input, 3.774 sec
+../input/tiny.input, 3.872 sec
+
+Tasks:[20]
+../input/tiny.input, 3.777 sec
+../input/tiny.input, 3.784 sec
+../input/tiny.input, 3.743 sec
+../input/tiny.input, 3.680 sec
+../input/tiny.input, 3.759 sec
+
+Tasks:[0]
+../input/small.input, 8.475 sec
+../input/small.input, 8.232 sec
+../input/small.input, 8.194 sec
+../input/small.input, 8.135 sec
+../input/small.input, 8.132 sec
+
+Tasks:[2]
+../input/small.input, 8.331 sec
+../input/small.input, 8.279 sec
+../input/small.input, 8.292 sec
+../input/small.input, 8.306 sec
+../input/small.input, 8.272 sec
+
+Tasks:[4]
+../input/small.input, 8.263 sec
+../input/small.input, 8.361 sec
+../input/small.input, 8.311 sec
+../input/small.input, 8.271 sec
+../input/small.input, 8.326 sec
+
+Tasks:[6]
+../input/small.input, 8.335 sec
+../input/small.input, 8.245 sec
+../input/small.input, 8.278 sec
+../input/small.input, 8.316 sec
+../input/small.input, 8.263 sec
+
+Tasks:[8]
+../input/small.input, 8.363 sec
+../input/small.input, 8.338 sec
+../input/small.input, 8.330 sec
+../input/small.input, 8.309 sec
+../input/small.input, 8.271 sec
+
+Tasks:[10]
+../input/small.input, 8.499 sec
+../input/small.input, 8.280 sec
+../input/small.input, 8.312 sec
+../input/small.input, 8.357 sec
+../input/small.input, 8.254 sec
+
+Tasks:[16]
+../input/small.input, 8.334 sec
+../input/small.input, 8.318 sec
+../input/small.input, 8.359 sec
+../input/small.input, 8.376 sec
+../input/small.input, 8.314 sec
+
+Tasks:[20]
+../input/small.input, 8.312 sec
+../input/small.input, 8.351 sec
+../input/small.input, 8.286 sec
+../input/small.input, 8.330 sec
+../input/small.input, 8.300 sec
+
+Tasks:[0]
+../input/medium.input, 132.451 sec
+../input/medium.input, 129.644 sec
+../input/medium.input, 126.864 sec
+../input/medium.input, 131.454 sec
+../input/medium.input, 129.215 sec
+
+Tasks:[2]
+../input/medium.input, 133.399 sec
+../input/medium.input, 129.392 sec
+../input/medium.input, 130.370 sec
+../input/medium.input, 128.727 sec
+../input/medium.input, 132.661 sec
+
+Tasks:[4]
+../input/medium.input, 130.653 sec
+../input/medium.input, 132.188 sec
+../input/medium.input, 131.007 sec
+../input/medium.input, 134.790 sec
+../input/medium.input, 127.813 sec
+
+Tasks:[6]
+../input/medium.input, 134.326 sec
+../input/medium.input, 132.326 sec
+../input/medium.input, 129.478 sec
+../input/medium.input, 130.405 sec
+../input/medium.input, 133.656 sec
+
+Tasks:[8]
+../input/medium.input, 131.302 sec
+../input/medium.input, 128.269 sec
+../input/medium.input, 133.671 sec
+../input/medium.input, 129.956 sec
+../input/medium.input, 138.072 sec
+
+Tasks:[10]
+../input/medium.input, 129.782 sec
+../input/medium.input, 130.178 sec
+../input/medium.input, 133.784 sec
+../input/medium.input, 132.028 sec
+../input/medium.input, 131.157 sec
+
+Tasks:[16]
+../input/medium.input, 127.901 sec
+../input/medium.input, 127.880 sec
+../input/medium.input, 130.972 sec
+../input/medium.input, 129.181 sec
+../input/medium.input, 133.174 sec
+
+Tasks:[20]
+../input/medium.input, 130.972 sec
+../input/medium.input, 134.357 sec
+../input/medium.input, 127.439 sec
+../input/medium.input, 134.663 sec
+../input/medium.input, 128.842 sec

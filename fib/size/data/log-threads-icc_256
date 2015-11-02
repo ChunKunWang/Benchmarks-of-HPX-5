@@ -1,0 +1,64 @@
+
+Threads:[1]
+OpenMP Work took 330.805736 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 326.050386 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 325.164606 sec.
+Fibonacci result for 45 is 1134903170
+
+Threads:[2]
+OpenMP Work took 577.978594 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 580.614843 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 588.396196 sec.
+Fibonacci result for 45 is 1134903170
+
+Threads:[4]
+OpenMP Work took 303.780107 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 306.025445 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 306.176387 sec.
+Fibonacci result for 45 is 1134903170
+
+Threads:[6]
+OpenMP Work took 257.590174 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 247.736668 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 251.528518 sec.
+Fibonacci result for 45 is 1134903170
+
+Threads:[8]
+OpenMP Work took 217.574389 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 208.694201 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 211.646880 sec.
+Fibonacci result for 45 is 1134903170
+
+Threads:[10]
+OpenMP Work took 166.635249 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 174.079437 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 180.316616 sec.
+Fibonacci result for 45 is 1134903170
+
+Threads:[15]
+OpenMP Work took 132.139319 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 129.605801 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 129.951775 sec.
+Fibonacci result for 45 is 1134903170
+
+Threads:[20]
+OpenMP Work took 107.115798 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 110.515758 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 109.642529 sec.
+Fibonacci result for 45 is 1134903170

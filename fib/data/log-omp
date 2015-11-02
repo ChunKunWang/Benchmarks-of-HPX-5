@@ -1,0 +1,64 @@
+
+Input:[10]
+OpenMP Work took 0.005118 sec.
+Fibonacci result for 10 is 55
+OpenMP Work took 0.012067 sec.
+Fibonacci result for 10 is 55
+OpenMP Work took 0.011118 sec.
+Fibonacci result for 10 is 55
+
+Input:[15]
+OpenMP Work took 0.011733 sec.
+Fibonacci result for 15 is 610
+OpenMP Work took 0.006454 sec.
+Fibonacci result for 15 is 610
+OpenMP Work took 0.006073 sec.
+Fibonacci result for 15 is 610
+
+Input:[20]
+OpenMP Work took 0.076988 sec.
+Fibonacci result for 20 is 6765
+OpenMP Work took 0.071771 sec.
+Fibonacci result for 20 is 6765
+OpenMP Work took 0.083019 sec.
+Fibonacci result for 20 is 6765
+
+Input:[25]
+OpenMP Work took 0.779039 sec.
+Fibonacci result for 25 is 75025
+OpenMP Work took 0.769762 sec.
+Fibonacci result for 25 is 75025
+OpenMP Work took 0.753621 sec.
+Fibonacci result for 25 is 75025
+
+Input:[30]
+OpenMP Work took 8.407045 sec.
+Fibonacci result for 30 is 832040
+OpenMP Work took 8.167419 sec.
+Fibonacci result for 30 is 832040
+OpenMP Work took 7.900825 sec.
+Fibonacci result for 30 is 832040
+
+Input:[35]
+OpenMP Work took 88.660303 sec.
+Fibonacci result for 35 is 9227465
+OpenMP Work took 91.994047 sec.
+Fibonacci result for 35 is 9227465
+OpenMP Work took 92.090094 sec.
+Fibonacci result for 35 is 9227465
+
+Input:[40]
+OpenMP Work took 1004.704995 sec.
+Fibonacci result for 40 is 102334155
+OpenMP Work took 989.603668 sec.
+Fibonacci result for 40 is 102334155
+OpenMP Work took 1099.069020 sec.
+Fibonacci result for 40 is 102334155
+
+Input:[45]
+OpenMP Work took 11384.106973 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 11221.702068 sec.
+Fibonacci result for 45 is 1134903170
+OpenMP Work took 11122.116417 sec.
+Fibonacci result for 45 is 1134903170

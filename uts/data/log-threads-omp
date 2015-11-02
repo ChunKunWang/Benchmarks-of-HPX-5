@@ -1,0 +1,265 @@
+
+Threads:[1]
+../input/toy.input, 0.820 sec
+../input/toy.input, 0.820 sec
+../input/toy.input, 0.819 sec
+../input/toy.input, 0.820 sec
+../input/toy.input, 0.821 sec
+
+Threads:[2]
+../input/toy.input, 0.620 sec
+../input/toy.input, 0.743 sec
+../input/toy.input, 0.742 sec
+../input/toy.input, 0.737 sec
+../input/toy.input, 0.739 sec
+
+Threads:[4]
+../input/toy.input, 0.739 sec
+../input/toy.input, 0.734 sec
+../input/toy.input, 0.674 sec
+../input/toy.input, 0.729 sec
+../input/toy.input, 0.716 sec
+
+Threads:[6]
+../input/toy.input, 0.849 sec
+../input/toy.input, 0.709 sec
+../input/toy.input, 0.837 sec
+../input/toy.input, 0.849 sec
+../input/toy.input, 0.847 sec
+
+Threads:[8]
+../input/toy.input, 1.065 sec
+../input/toy.input, 0.967 sec
+../input/toy.input, 1.069 sec
+../input/toy.input, 0.953 sec
+../input/toy.input, 1.111 sec
+
+Threads:[10]
+../input/toy.input, 1.117 sec
+../input/toy.input, 1.158 sec
+../input/toy.input, 1.289 sec
+../input/toy.input, 1.125 sec
+../input/toy.input, 1.214 sec
+
+Threads:[15]
+../input/toy.input, 1.612 sec
+../input/toy.input, 1.699 sec
+../input/toy.input, 1.676 sec
+../input/toy.input, 1.597 sec
+../input/toy.input, 1.473 sec
+
+Threads:[20]
+../input/toy.input, 2.467 sec
+../input/toy.input, 2.336 sec
+../input/toy.input, 2.324 sec
+../input/toy.input, 2.044 sec
+../input/toy.input, 2.291 sec
+
+Threads:[1]
+../input/test.input, 1.059 sec
+../input/test.input, 1.059 sec
+../input/test.input, 1.060 sec
+../input/test.input, 1.060 sec
+../input/test.input, 1.059 sec
+
+Threads:[2]
+../input/test.input, 0.879 sec
+../input/test.input, 0.621 sec
+../input/test.input, 0.634 sec
+../input/test.input, 0.869 sec
+../input/test.input, 0.895 sec
+
+Threads:[4]
+../input/test.input, 0.859 sec
+../input/test.input, 0.927 sec
+../input/test.input, 0.651 sec
+../input/test.input, 0.863 sec
+../input/test.input, 0.807 sec
+
+Threads:[6]
+../input/test.input, 1.109 sec
+../input/test.input, 0.991 sec
+../input/test.input, 1.130 sec
+../input/test.input, 0.986 sec
+../input/test.input, 1.026 sec
+
+Threads:[8]
+../input/test.input, 1.198 sec
+../input/test.input, 1.295 sec
+../input/test.input, 1.372 sec
+../input/test.input, 1.268 sec
+../input/test.input, 1.306 sec
+
+Threads:[10]
+../input/test.input, 1.418 sec
+../input/test.input, 1.404 sec
+../input/test.input, 1.428 sec
+../input/test.input, 1.401 sec
+../input/test.input, 1.419 sec
+
+Threads:[15]
+../input/test.input, 2.007 sec
+../input/test.input, 2.122 sec
+../input/test.input, 2.151 sec
+../input/test.input, 1.726 sec
+../input/test.input, 2.190 sec
+
+Threads:[20]
+../input/test.input, 2.743 sec
+../input/test.input, 2.504 sec
+../input/test.input, 2.622 sec
+../input/test.input, 2.558 sec
+../input/test.input, 2.790 sec
+
+Threads:[1]
+../input/tiny.input, 8.057 sec
+../input/tiny.input, 8.057 sec
+../input/tiny.input, 8.051 sec
+../input/tiny.input, 8.052 sec
+../input/tiny.input, 8.050 sec
+
+Threads:[2]
+../input/tiny.input, 7.814 sec
+../input/tiny.input, 7.803 sec
+../input/tiny.input, 7.987 sec
+../input/tiny.input, 7.798 sec
+../input/tiny.input, 8.009 sec
+
+Threads:[4]
+../input/tiny.input, 8.078 sec
+../input/tiny.input, 7.938 sec
+../input/tiny.input, 7.851 sec
+../input/tiny.input, 8.028 sec
+../input/tiny.input, 8.167 sec
+
+Threads:[6]
+../input/tiny.input, 8.022 sec
+../input/tiny.input, 8.232 sec
+../input/tiny.input, 7.777 sec
+../input/tiny.input, 8.277 sec
+../input/tiny.input, 8.023 sec
+
+Threads:[8]
+../input/tiny.input, 8.022 sec
+../input/tiny.input, 7.571 sec
+../input/tiny.input, 8.259 sec
+../input/tiny.input, 8.086 sec
+../input/tiny.input, 8.112 sec
+
+Threads:[10]
+../input/tiny.input, 8.249 sec
+../input/tiny.input, 5.705 sec
+../input/tiny.input, 7.971 sec
+../input/tiny.input, 9.347 sec
+../input/tiny.input, 8.569 sec
+
+Threads:[15]
+../input/tiny.input, 6.564 sec
+../input/tiny.input, 6.557 sec
+../input/tiny.input, 6.530 sec
+../input/tiny.input, 8.806 sec
+../input/tiny.input, 8.434 sec
+
+Threads:[20]
+../input/tiny.input, 6.630 sec
+../input/tiny.input, 6.878 sec
+../input/tiny.input, 7.167 sec
+../input/tiny.input, 7.873 sec
+../input/tiny.input, 9.109 sec
+
+Threads:[1]
+
+Threads:[2]
+../input/small.input, 28.894 sec
+../input/small.input, 27.044 sec
+../input/small.input, 28.933 sec
+../input/small.input, 28.747 sec
+../input/small.input, 28.899 sec
+
+Threads:[4]
+../input/small.input, 28.714 sec
+../input/small.input, 26.922 sec
+../input/small.input, 28.193 sec
+../input/small.input, 28.758 sec
+../input/small.input, 28.809 sec
+
+Threads:[6]
+../input/small.input, 28.732 sec
+../input/small.input, 28.779 sec
+../input/small.input, 28.803 sec
+../input/small.input, 27.270 sec
+../input/small.input, 28.807 sec
+
+Threads:[8]
+../input/small.input, 28.443 sec
+../input/small.input, 29.046 sec
+../input/small.input, 28.862 sec
+../input/small.input, 27.556 sec
+../input/small.input, 28.020 sec
+
+Threads:[10]
+../input/small.input, 28.719 sec
+../input/small.input, 29.237 sec
+../input/small.input, 29.051 sec
+../input/small.input, 29.142 sec
+../input/small.input, 28.528 sec
+
+Threads:[15]
+../input/small.input, 28.747 sec
+../input/small.input, 29.746 sec
+../input/small.input, 29.619 sec
+../input/small.input, 38.812 sec
+../input/small.input, 29.606 sec
+
+Threads:[20]
+../input/small.input, 27.446 sec
+../input/small.input, 31.332 sec
+../input/small.input, 30.914 sec
+../input/small.input, 31.069 sec
+../input/small.input, 31.212 sec
+
+Threads:[1]
+
+Threads:[2]
+../input/medium.input, 424.246 sec
+../input/medium.input, 424.719 sec
+../input/medium.input, 424.064 sec
+../input/medium.input, 424.267 sec
+
+Threads:[4]
+../input/medium.input, 424.427 sec
+../input/medium.input, 424.778 sec
+../input/medium.input, 425.072 sec
+
+Threads:[6]
+../input/medium.input, 425.196 sec
+../input/medium.input, 424.632 sec
+../input/medium.input, 425.077 sec
+
+Threads:[8]
+../input/medium.input, 425.300 sec
+../input/medium.input, 424.971 sec
+../input/medium.input, 425.729 sec
+../input/medium.input, 424.869 sec
+../input/medium.input, 425.276 sec
+
+Threads:[10]
+../input/medium.input, 425.503 sec
+../input/medium.input, 424.929 sec
+../input/medium.input, 425.002 sec
+../input/medium.input, 425.376 sec
+../input/medium.input, 380.214 sec
+
+Threads:[15]
+../input/medium.input, 380.613 sec
+../input/medium.input, 427.945 sec
+../input/medium.input, 426.304 sec
+../input/medium.input, 424.873 sec
+../input/medium.input, 425.471 sec
+
+Threads:[20]
+../input/medium.input, 426.521 sec
+../input/medium.input, 386.753 sec
+../input/medium.input, 426.720 sec
+../input/medium.input, 426.686 sec
+../input/medium.input, 426.328 sec

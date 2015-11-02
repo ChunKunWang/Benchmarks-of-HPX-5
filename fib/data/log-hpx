@@ -1,0 +1,112 @@
+
+Input:[10]
+fib(10)=55
+seconds: 0.0004546
+localities: 1
+threads/locality: 20
+fib(10)=55
+seconds: 0.0005835
+localities: 1
+threads/locality: 20
+fib(10)=55
+seconds: 0.0004399
+localities: 1
+threads/locality: 20
+
+Input:[15]
+fib(15)=610
+seconds: 0.0011356
+localities: 1
+threads/locality: 20
+fib(15)=610
+seconds: 0.0011188
+localities: 1
+threads/locality: 20
+fib(15)=610
+seconds: 0.0026185
+localities: 1
+threads/locality: 20
+
+Input:[20]
+fib(20)=6765
+seconds: 0.0042230
+localities: 1
+threads/locality: 20
+fib(20)=6765
+seconds: 0.0079152
+localities: 1
+threads/locality: 20
+fib(20)=6765
+seconds: 0.0026655
+localities: 1
+threads/locality: 20
+
+Input:[25]
+fib(25)=75025
+seconds: 0.0166450
+localities: 1
+threads/locality: 20
+fib(25)=75025
+seconds: 0.0148058
+localities: 1
+threads/locality: 20
+fib(25)=75025
+seconds: 0.0129473
+localities: 1
+threads/locality: 20
+
+Input:[30]
+fib(30)=832040
+seconds: 0.1165144
+localities: 1
+threads/locality: 20
+fib(30)=832040
+seconds: 0.1154680
+localities: 1
+threads/locality: 20
+fib(30)=832040
+seconds: 0.1216255
+localities: 1
+threads/locality: 20
+
+Input:[35]
+fib(35)=9227465
+seconds: 1.2490619
+localities: 1
+threads/locality: 20
+fib(35)=9227465
+seconds: 1.2447451
+localities: 1
+threads/locality: 20
+fib(35)=9227465
+seconds: 1.2465446
+localities: 1
+threads/locality: 20
+
+Input:[40]
+fib(40)=102334155
+seconds: 13.8339900
+localities: 1
+threads/locality: 20
+fib(40)=102334155
+seconds: 13.7472880
+localities: 1
+threads/locality: 20
+fib(40)=102334155
+seconds: 13.7435187
+localities: 1
+threads/locality: 20
+
+Input:[45]
+fib(45)=1134903170
+seconds: 153.2192135
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 152.5268823
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 152.1007072
+localities: 1
+threads/locality: 20

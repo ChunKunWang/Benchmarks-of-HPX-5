@@ -1,0 +1,38 @@
+
+Input:[10]
+OpenMP Work took 0.000394 sec.
+Steps = 10.000000;Pi = 3.142426
+OpenMP Work took 0.000322 sec.
+Steps = 10.000000;Pi = 3.142426
+OpenMP Work took 0.000331 sec.
+Steps = 10.000000;Pi = 3.142426
+
+Input:[100]
+OpenMP Work took 0.000518 sec.
+Steps = 100.000000;Pi = 3.141601
+OpenMP Work took 0.000493 sec.
+Steps = 100.000000;Pi = 3.141601
+OpenMP Work took 0.000486 sec.
+Steps = 100.000000;Pi = 3.141601
+
+Input:[1000]
+OpenMP Work took 0.001182 sec.
+Steps = 1000.000000;Pi = 3.141593
+OpenMP Work took 0.001146 sec.
+Steps = 1000.000000;Pi = 3.141593
+OpenMP Work took 0.001128 sec.
+Steps = 1000.000000;Pi = 3.141593
+
+Input:[10000]
+OpenMP Work took 0.003378 sec.
+Steps = 10000.000000;Pi = 3.141593
+OpenMP Work took 0.003344 sec.
+Steps = 10000.000000;Pi = 3.141593
+OpenMP Work took 0.002812 sec.
+Steps = 10000.000000;Pi = 3.141593
+
+Input:[100000]
+
+Input:[1000000]
+
+Input:[10000000]

@@ -1,0 +1,21 @@
+
+../input/toy.input, 2.062 sec
+../input/toy.input, 2.306 sec
+../input/toy.input, 2.031 sec
+../input/toy.input, 2.133 sec
+../input/toy.input, 2.087 sec
+
+../input/test.input, 2.744 sec
+../input/test.input, 2.843 sec
+../input/test.input, 2.302 sec
+../input/test.input, 2.822 sec
+../input/test.input, 2.925 sec
+
+../input/tiny.input, 6.951 sec
+../input/tiny.input, 7.103 sec
+./input/tiny.input, 9.360 sec
+../input/tiny.input, 6.943 sec
+../input/tiny.input, 8.932 sec
+
+../input/small.input, 31.170 sec
+
