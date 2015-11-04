@@ -1,0 +1,24 @@
+
+Number of levels    = 4
+Cities per level    = 36
+Population ratio    = 10
+Simulation time     = 365
+Assess time         = 2
+Convalescence time  = 12
+Initial seed        = 23
+Get sick prob.      = 0.002000
+Convalescence prob. = 0.100000
+Realloc prob.       = 0.150000
+OpenMP Work took 38.033805 sec.
+
+Sim. Variables      = expect / result
+Total population    = 988000 / 988000 people
+Hospitals           =  47989 /  47989 people
+Personnel           =  98800 /  98800 people
+Check-in's          = 4696887 / 4696887 people
+In Villages         =   3305 /   3305 people
+In Waiting List     = 967432 / 967432 people
+In Assess           =   6249 /   6249 people
+Inside Hospital     =  11014 /  11014 people
+Average Stay        = 356.682220 / 356.682220 u/time
+RESULT_SUCCESSFUL!
