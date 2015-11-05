@@ -12,6 +12,7 @@
 
 static hpx_action_t _health      = 0;
 static hpx_action_t _health_main = 0;
+hpx_addr_t mutex;
 
 /* global variables */
 int sim_level;
@@ -119,7 +120,7 @@ void allocate_village( struct Village **capital, struct Village *back, struct Vi
 		(*capital)->hosp.waiting = NULL;
 		(*capital)->hosp.inside = NULL;
 		(*capital)->hosp.realloc = NULL;
-		omp_init_lock(&(*capital)->hosp.realloc_lock);
+		//omp_init_lock(&(*capital)->hosp.realloc_lock);
 		//(*capital)->hosp.mutex = hpx_lco_sema_new(1);
 		// Create Cities (lower level)
 		inext = NULL;
@@ -265,11 +266,13 @@ void check_patients_assess_par(struct Village *village)
 				{
 					village->hosp.free_personnel++;
 					removeList(&(village->hosp.assess), p);
-					omp_set_lock(&(village->hosp.realloc_lock));
+					//omp_set_lock(&(village->hosp.realloc_lock));
 					//hpx_lco_sema_p(village->hosp.mutex);
+					hpx_lco_sema_p(mutex);
 					addList(&(village->back->hosp.realloc), p); 
+					hpx_lco_sema_v_sync(mutex);
 					//hpx_lco_sema_v_sync(village->hosp.mutex);
-					omp_unset_lock(&(village->hosp.realloc_lock));
+					//omp_unset_lock(&(village->hosp.realloc_lock));
 				} 
 			}
 			else /* move to village */
@@ -363,6 +366,81 @@ void put_in_hosp(struct Hosp *hosp, struct Patient *patient)
 /**********************************************************************/
 static int _health_action(void *args, size_t size) 
 {
+	struct Village *village = (struct Village *)args;	
+	struct Village *vlist;
+	int i, counter = 0;
+
+	// lowest level returns nothing
+	// only for sim_village first call with village = NULL
+	// recursive call cannot occurs
+	if (village == NULL) return HPX_SUCCESS;
+
+	vlist = village->forward;
+	while(vlist) {
+		counter++;
+		vlist = vlist->next;
+	}
+	
+	bool D_CALL = false;
+	if(counter==0) {
+		counter = 1;
+		D_CALL = true;
+	}
+
+	struct Village *temp[counter];
+	hpx_addr_t futures[counter];
+	hpx_addr_t threads[counter];
+	int pqs[counter];
+	int p_size[counter];
+	void *addrs[counter];
+
+	for(i = 0; i < counter; i++) {
+		futures[i] = hpx_lco_future_new(sizeof(int));
+		threads[i] = HPX_HERE;
+		pqs[i] = 0;
+		addrs[i] = &pqs[i];
+		p_size[i] = sizeof(int);
+	}
+
+	/* Traverse village hierarchy (lower level first)*/
+	vlist = village->forward;
+	//printf("counter = %d, vlist = %p\n", counter, vlist);
+	i = 0;
+	while(vlist)
+	{
+		temp[i] = vlist;
+		//printf("temp[%d] = %p\n", i, temp[i]);
+//#pragma omp task untied
+		//sim_village_par(vlist);
+		hpx_call(threads[i], _health, futures[i], temp[i], sizeof(struct Village));
+		vlist = vlist->next;
+		i++;
+	}
+
+	if( !D_CALL ) {
+		hpx_lco_get_all(counter, futures, p_size, addrs, NULL);
+
+		for(i = 0; i < counter; i++)
+			hpx_lco_delete(futures[i], HPX_NULL);
+	}
+
+	/* Uses lists v->hosp->inside, and v->return */
+	check_patients_inside(village);
+
+	/* Uses lists v->hosp->assess, v->hosp->inside, v->population and (v->back->hosp->realloc) !!! */
+	check_patients_assess_par(village);
+
+	/* Uses lists v->hosp->waiting, and v->hosp->assess */
+	check_patients_waiting(village);
+
+//#pragma omp taskwait
+	
+	/* Uses lists v->hosp->realloc, v->hosp->asses and v->hosp->waiting */
+	check_patients_realloc(village);
+
+	/* Uses list v->population, v->hosp->asses and v->h->waiting */
+	check_patients_population(village);
+
 	return HPX_SUCCESS;
 }
 
@@ -401,7 +479,6 @@ void sim_village_par(struct Village *village)
 	check_patients_waiting(village);
 
 //#pragma omp taskwait
-	printf("counter=%d; level=%d\n", counter, village->level);
 
 	/* Uses lists v->hosp->realloc, v->hosp->asses and v->hosp->waiting */
 	check_patients_realloc(village);
@@ -523,19 +600,19 @@ void sim_village_main_par(struct Village *top)
 {
 	long i;
 
-#ifdef _OPENMP
-		double start = omp_get_wtime();;
-#endif
-
-//#pragma omp parallel
-//#pragma omp single
-//#pragma omp task untied
 	for (i = 0; i < sim_time; i++) sim_village_par(top);   
+}
 
-#ifdef _OPENMP
-		double time = omp_get_wtime() - start;
-		printf("OpenMP Work took %f sec.\n", time);
-#endif
+void sim_village_main_hpx(struct Village *top)
+{
+	long i;
+	hpx_addr_t and = hpx_lco_and_new(sim_time);
+
+	for (i = 0; i < sim_time; i++)
+		hpx_call(HPX_HERE, _health, and, top, sizeof(struct Village));
+ 
+	hpx_lco_wait(and);
+	hpx_lco_delete(and, HPX_NULL);
 }
 
 static void _usage(FILE *f, int error) {
@@ -549,12 +626,18 @@ static int _health_main_action(void *args, size_t size)
 {
 	char *ptr = (char *)args;
 	struct Village *top; 
+	hpx_time_t start;
 
+	mutex = hpx_lco_sema_new(1);
 	read_input_data(ptr);
 
 	allocate_village(&top, ((void *)0), ((void *)0), sim_level, 0);;
 
-	sim_village_main_par(top);;
+	start = hpx_time_now();
+	//sim_village_main_par(top);;
+	sim_village_main_hpx(top);;
+
+	printf("HPX-5 health took: %.7f (s)\n", hpx_time_elapsed_ms(start)/1e3);
 
 	check_village(top);
 
