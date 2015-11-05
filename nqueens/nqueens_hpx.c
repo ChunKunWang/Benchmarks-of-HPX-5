@@ -222,7 +222,6 @@ int main(int argc, char *argv[])
                 return -1;
         }
 
-
 	// parse the command line
 	int opt = 0;
 	while ((opt = getopt(argc, argv, "h?")) != -1) {

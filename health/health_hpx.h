@@ -17,8 +17,10 @@
 /*  along with this program; if not, write to the Free Software                               */
 /*  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA            */
 /**********************************************************************************************/
-#ifndef _HEALTH_H
-#define _HEALTH_H
+#ifndef _HEALTH_HPX_H
+#define _HEALTH_HPX_H
+
+#include <hpx/hpx.h>
 /* random defines */
 #define IA 16807
 #define IM 2147483647
@@ -59,6 +61,7 @@ struct Hosp {
 	struct Patient *inside;
 	struct Patient *realloc;
 	omp_lock_t  realloc_lock;
+	hpx_addr_t mutex;
 };
 struct Village {
 	int id;

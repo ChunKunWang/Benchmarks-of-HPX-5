@@ -6,8 +6,12 @@
 #include <math.h>
 #include <string.h>
 #include <assert.h>
+#include <unistd.h>
 #include <omp.h>
-#include "health.h"
+#include "health_hpx.h"
+
+static hpx_action_t _health      = 0;
+static hpx_action_t _health_main = 0;
 
 /* global variables */
 int sim_level;
@@ -116,6 +120,7 @@ void allocate_village( struct Village **capital, struct Village *back, struct Vi
 		(*capital)->hosp.inside = NULL;
 		(*capital)->hosp.realloc = NULL;
 		omp_init_lock(&(*capital)->hosp.realloc_lock);
+		//(*capital)->hosp.mutex = hpx_lco_sema_new(1);
 		// Create Cities (lower level)
 		inext = NULL;
 		for (i = sim_cities; i>0; i--)
@@ -261,7 +266,9 @@ void check_patients_assess_par(struct Village *village)
 					village->hosp.free_personnel++;
 					removeList(&(village->hosp.assess), p);
 					omp_set_lock(&(village->hosp.realloc_lock));
+					//hpx_lco_sema_p(village->hosp.mutex);
 					addList(&(village->back->hosp.realloc), p); 
+					//hpx_lco_sema_v_sync(village->hosp.mutex);
 					omp_unset_lock(&(village->hosp.realloc_lock));
 				} 
 			}
@@ -334,6 +341,7 @@ void check_patients_population(struct Village *village)
 			put_in_hosp(&(village->hosp), p);
 		}
 	}
+
 }
 /**********************************************************************/
 void put_in_hosp(struct Hosp *hosp, struct Patient *patient) 
@@ -353,20 +361,32 @@ void put_in_hosp(struct Hosp *hosp, struct Patient *patient)
 	}
 }
 /**********************************************************************/
+static int _health_action(void *args, size_t size) 
+{
+	return HPX_SUCCESS;
+}
+
 void sim_village_par(struct Village *village)
 {
 	struct Village *vlist;
+	int counter = 0;
 
 	// lowest level returns nothing
 	// only for sim_village first call with village = NULL
 	// recursive call cannot occurs
 	if (village == NULL) return;
 
+	vlist = village->forward;
+	while(vlist) {
+		counter++;
+		vlist = vlist->next;
+	}
+
 	/* Traverse village hierarchy (lower level first)*/
 	vlist = village->forward;
 	while(vlist)
 	{
-#pragma omp task untied
+//#pragma omp task untied
 		sim_village_par(vlist);
 		vlist = vlist->next;
 	}
@@ -380,7 +400,8 @@ void sim_village_par(struct Village *village)
 	/* Uses lists v->hosp->waiting, and v->hosp->assess */
 	check_patients_waiting(village);
 
-#pragma omp taskwait
+//#pragma omp taskwait
+	printf("counter=%d; level=%d\n", counter, village->level);
 
 	/* Uses lists v->hosp->realloc, v->hosp->asses and v->hosp->waiting */
 	check_patients_realloc(village);
@@ -517,20 +538,19 @@ void sim_village_main_par(struct Village *top)
 #endif
 }
 
-int main(int argc, char *argv[])
+static void _usage(FILE *f, int error) {
+	fprintf(f, "Usage: hpx-5 [options] INPUT_FILE\n");
+	//hpx_print_help();
+	fflush(f);
+	exit(error);
+}
+
+static int _health_main_action(void *args, size_t size)
 {
+	char *ptr = (char *)args;
 	struct Village *top; 
-	char bots_arg_file[255]="./input/small.input";
 
-	if( argc < 1 ) {
-		printf("./omp <input file>\n");
-		return 0;
-	}
-	else 
-		strcpy(bots_arg_file, argv[1] );
-	
-
-	read_input_data(bots_arg_file);
+	read_input_data(ptr);
 
 	allocate_village(&top, ((void *)0), ((void *)0), sim_level, 0);;
 
@@ -538,7 +558,52 @@ int main(int argc, char *argv[])
 
 	check_village(top);
 
-	return 0;
+	hpx_exit(HPX_SUCCESS);
+}
+
+int main(int argc, char *argv[])
+{
+	char bots_arg_file[255]="./input/small.input";
+
+	if (hpx_init(&argc, &argv) != 0) {
+                fprintf(stderr, "HPX: failed to initialize.\n");
+                return -1;
+        }
+
+	// parse the command line
+	int opt = 0;
+	while ((opt = getopt(argc, argv, "h?")) != -1) {
+		switch (opt) {
+			case 'h':
+				_usage(stdout, EXIT_SUCCESS);
+			case '?':
+			default:
+				_usage(stderr, EXIT_FAILURE);
+		}
+	}
+
+	argc -= optind;
+	argv += optind;
+
+	int n = 0;
+	switch (argc) {
+		case 0:
+			fprintf(stderr, "\nMissing health input.\n"); // fall through
+		default:
+			_usage(stderr, EXIT_FAILURE);
+		case 1:
+			strcpy(bots_arg_file, argv[0] );
+			break;
+	}
+
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _health, _health_action,
+			HPX_POINTER, HPX_SIZE_T);
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _health_main, _health_main_action,
+			HPX_POINTER, HPX_SIZE_T);
+
+	int t = hpx_run(&_health_main, &bots_arg_file, sizeof(bots_arg_file));
+	hpx_finalize();
+	return t;
 }
 
 
