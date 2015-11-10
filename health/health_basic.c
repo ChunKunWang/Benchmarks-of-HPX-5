@@ -215,8 +215,10 @@ void check_patients_inside(struct Village *village)
 	struct Patient *list = village->hosp.inside;
 	struct Patient *p;
 
+	printf("inside: %p, %d\n", village, village);
 	while (list != NULL)
 	{
+		//printf("SUCCESS!\n");
 		p = list;
 		list = list->forward; 
 		p->time_left--;
@@ -249,10 +251,10 @@ void check_patients_assess_par(struct Village *village)
 			{
 				rand = my_rand(&(p->seed));
 				/* !sim_realloc_p % or root hospital */
-				printf("float = %f; sim_relloc_p = %f\n", rand, sim_realloc_p);
+				//printf("float = %f; sim_relloc_p = %f\n", rand, sim_realloc_p);
 				if (rand > sim_realloc_p || village->level == sim_level) 
 				{
-					printf("here\n");
+					//printf("here\n");
 					removeList(&(village->hosp.assess), p);
 					addList(&(village->hosp.inside), p);
 					p->time_left = sim_convalescence_time;
@@ -359,20 +361,31 @@ void sim_village_par(struct Village *village)
 {
 	struct Village *vlist;
 
+	printf("input village: %p, %d\n", village, village);
 	// lowest level returns nothing
 	// only for sim_village first call with village = NULL
 	// recursive call cannot occurs
-	if (village == NULL) return;
-
+	if (village == NULL) {
+		printf("I'm NULL!!!\n");
+		return;
+	}
+	/*
+	printf("ID[%d] at level %d with seed %.0f. In Hosp, %d, %d, %p.\n", village->id, village->level, village->seed,
+								village->hosp.personnel, 
+								village->hosp.free_personnel,
+								village->hosp.realloc_lock );
+	*/
 	/* Traverse village hierarchy (lower level first)*/
 	vlist = village->forward;
 	while(vlist)
 	{
-#pragma omp task untied
+		printf("----> before vlist = %p, %d\n", vlist, vlist);
 		sim_village_par(vlist);
 		vlist = vlist->next;
+		printf("----> after vlist = %p, %d\n", vlist, vlist);
 	}
 
+	printf("health_action: %p, %d\n", village, village);
 	/* Uses lists v->hosp->inside, and v->return */
 	check_patients_inside(village);
 
@@ -508,9 +521,6 @@ void sim_village_main_par(struct Village *top)
 		double start = omp_get_wtime();;
 #endif
 
-//#pragma omp parallel
-//#pragma omp single
-//#pragma omp task untied
 	for (i = 0; i < sim_time; i++) sim_village_par(top);   
 
 #ifdef _OPENMP
@@ -532,9 +542,10 @@ int main(int argc, char *argv[])
 		strcpy(bots_arg_file, argv[1] );
 	
 
+	printf("initial top = %p, %d\n", *top, *top);
 	read_input_data(bots_arg_file);
-
 	allocate_village(&top, ((void *)0), ((void *)0), sim_level, 0);;
+	printf("\ninitial top = %p, %d\n", *top, *top);
 
 	sim_village_main_par(top);;
 

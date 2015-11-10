@@ -606,13 +606,15 @@ void sim_village_main_par(struct Village *top)
 void sim_village_main_hpx(struct Village *top)
 {
 	long i;
-	hpx_addr_t and = hpx_lco_and_new(sim_time);
+	//hpx_addr_t and = hpx_lco_and_new(sim_time);
 
-	for (i = 0; i < sim_time; i++)
-		hpx_call(HPX_HERE, _health, and, top, sizeof(struct Village));
+	for (i = 0; i < sim_time; i++) {
+		//hpx_call(HPX_HERE, _health, and, top, sizeof(struct Village));
+		hpx_call_sync(HPX_HERE, _health, NULL, 0, top, sizeof(struct Village));
+	}
  
-	hpx_lco_wait(and);
-	hpx_lco_delete(and, HPX_NULL);
+	//hpx_lco_wait(and);
+	//hpx_lco_delete(and, HPX_NULL);
 }
 
 static void _usage(FILE *f, int error) {

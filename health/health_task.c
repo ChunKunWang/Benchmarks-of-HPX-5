@@ -237,6 +237,7 @@ void check_patients_assess_par(struct Village *village)
 
 	while (list != NULL) 
 	{
+		printf("check in patients\n");
 		p = list;
 		list = list->forward; 
 		p->time_left--;
@@ -249,8 +250,14 @@ void check_patients_assess_par(struct Village *village)
 			{
 				rand = my_rand(&(p->seed));
 				/* !sim_realloc_p % or root hospital */
+				printf("rand(%f) > sim_relloc_p(%f) || vl(%d) = sl(%d)\n", 
+						rand, 
+						sim_realloc_p, 
+						village->level, 
+						sim_level);
 				if (rand > sim_realloc_p || village->level == sim_level) 
 				{
+					printf("here\n");
 					removeList(&(village->hosp.assess), p);
 					addList(&(village->hosp.inside), p);
 					p->time_left = sim_convalescence_time;
@@ -261,6 +268,7 @@ void check_patients_assess_par(struct Village *village)
 					village->hosp.free_personnel++;
 					removeList(&(village->hosp.assess), p);
 					omp_set_lock(&(village->hosp.realloc_lock));
+					printf("In critical region.\n");
 					addList(&(village->back->hosp.realloc), p); 
 					omp_unset_lock(&(village->hosp.realloc_lock));
 				} 

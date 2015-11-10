@@ -20,6 +20,7 @@
 #ifndef _HEALTH_HPX_H
 #define _HEALTH_HPX_H
 
+#include <hpx/attributes.h>
 #include <hpx/hpx.h>
 /* random defines */
 #define IA 16807
@@ -60,7 +61,7 @@ struct Hosp {
 	struct Patient *assess;
 	struct Patient *inside;
 	struct Patient *realloc;
-	omp_lock_t  realloc_lock;
+	omp_lock_t realloc_lock;
 	hpx_addr_t mutex;
 };
 struct Village {
