@@ -1,0 +1,376 @@
+
+Threshold:[0]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 7.5300780
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 7.5678308
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 7.7171734
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 7.5726889
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 7.5281070
+localities: 1
+threads/locality: 20
+
+Threshold:[2]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4619786
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4267478
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4632910
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.3839371
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4630987
+localities: 1
+threads/locality: 20
+
+Threshold:[4]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4510046
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4335359
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4066993
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4062717
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4233951
+localities: 1
+threads/locality: 20
+
+Threshold:[6]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4461080
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4109857
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4374675
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4268294
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4199333
+localities: 1
+threads/locality: 20
+
+Threshold:[8]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4040157
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4182740
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4304614
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4483296
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.3998546
+localities: 1
+threads/locality: 20
+
+Threshold:[10]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4170149
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4314366
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4144138
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4457484
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4371003
+localities: 1
+threads/locality: 20
+
+Threshold:[16]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4406475
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4627822
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4220855
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.3935148
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4070230
+localities: 1
+threads/locality: 20
+
+Threshold:[20]
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4171470
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4073386
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4340234
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4204484
+localities: 1
+threads/locality: 20
+
+Recursive Knight Tour Problem
+=============================
+
+Board Size ----> 8
+
+seconds: 9.4079945
+localities: 1
+threads/locality: 20

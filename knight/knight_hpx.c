@@ -111,11 +111,11 @@ int _knight_main_action(int *args, size_t size) {
 	int   row, column, top, i;
 	int   result=0;
 
-	printf("\nRecursive Knight Tour Problem");
-	printf("\n=============================");
+	//printf("\nRecursive Knight Tour Problem");
+	//printf("\n=============================");
 
 	n = *args;
-	printf("\n\nBoard Size ----> %d\n", n );
+	printf("Board Size ----> %d\n", n );
 
 	row = 0;
 	//printf( "Start Row -----> %d\n", row);
@@ -137,10 +137,10 @@ int _knight_main_action(int *args, size_t size) {
 	else
 		;//display();
 
-	printf("\n");
+	//printf("\n");
 	printf("seconds: %.7f\n", elapsed);
-	printf("localities: %d\n", HPX_LOCALITIES);
-	printf("threads/locality: %d\n", HPX_THREADS);
+	//printf("localities: %d\n", HPX_LOCALITIES);
+	//printf("threads/locality: %d\n", HPX_THREADS);
 
 	hpx_exit(HPX_SUCCESS);
 }

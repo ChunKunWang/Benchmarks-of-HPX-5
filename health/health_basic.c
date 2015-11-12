@@ -215,7 +215,7 @@ void check_patients_inside(struct Village *village)
 	struct Patient *list = village->hosp.inside;
 	struct Patient *p;
 
-	printf("inside: %p, %d\n", village, village);
+	printf("inside id[%d]: %p, %d\n", village->id, village, village);
 	while (list != NULL)
 	{
 		//printf("SUCCESS!\n");
@@ -361,7 +361,7 @@ void sim_village_par(struct Village *village)
 {
 	struct Village *vlist;
 
-	printf("input village: %p, %d\n", village, village);
+	printf("[%d]input village: %p, %d\n", village->id, village, village);
 	// lowest level returns nothing
 	// only for sim_village first call with village = NULL
 	// recursive call cannot occurs
@@ -379,13 +379,13 @@ void sim_village_par(struct Village *village)
 	vlist = village->forward;
 	while(vlist)
 	{
-		printf("----> before vlist = %p, %d\n", vlist, vlist);
+		//printf("----> before vlist = %p, %d\n", vlist, vlist);
 		sim_village_par(vlist);
 		vlist = vlist->next;
-		printf("----> after vlist = %p, %d\n", vlist, vlist);
+		//printf("----> after vlist = %p, %d\n", vlist, vlist);
 	}
 
-	printf("health_action: %p, %d\n", village, village);
+	//printf("health_action: %p, %d\n", village, village);
 	/* Uses lists v->hosp->inside, and v->return */
 	check_patients_inside(village);
 
@@ -394,8 +394,6 @@ void sim_village_par(struct Village *village)
 
 	/* Uses lists v->hosp->waiting, and v->hosp->assess */
 	check_patients_waiting(village);
-
-#pragma omp taskwait
 
 	/* Uses lists v->hosp->realloc, v->hosp->asses and v->hosp->waiting */
 	check_patients_realloc(village);

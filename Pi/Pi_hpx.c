@@ -74,8 +74,8 @@ static int _Pi_main_action(void *args, size_t size)
 
 	printf("Steps: %f; Pi=%f\n", PI_STEP, pi);
 	printf("seconds: %.7f\n", elapsed);
-	printf("localities: %d\n", HPX_LOCALITIES);
-	printf("threads/locality: %d\n", HPX_THREADS);
+	//printf("localities: %d\n", HPX_LOCALITIES);
+	//printf("threads/locality: %d\n", HPX_THREADS);
 
 	hpx_exit(HPX_SUCCESS);
 }

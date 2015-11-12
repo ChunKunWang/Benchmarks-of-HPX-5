@@ -1,0 +1,176 @@
+
+Threshold:[0]
+fib(45)=1134903170
+seconds: 151.3529598
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 152.9361585
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 149.5022418
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 149.3781441
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 151.6389746
+localities: 1
+threads/locality: 20
+
+Threshold:[2]
+fib(45)=1134903170
+seconds: 149.1385808
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 148.5640877
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 152.5986465
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 150.5929176
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 146.8680909
+localities: 1
+threads/locality: 20
+
+Threshold:[4]
+fib(45)=1134903170
+seconds: 155.6555703
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 150.9837803
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 147.4000547
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 148.1563167
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 144.0487743
+localities: 1
+threads/locality: 20
+
+Threshold:[6]
+fib(45)=1134903170
+seconds: 147.8851603
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 148.2974039
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 147.0174164
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 145.1440994
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 144.4856236
+localities: 1
+threads/locality: 20
+
+Threshold:[8]
+fib(45)=1134903170
+seconds: 135.9930366
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 156.5747255
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 148.6761366
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 150.5572638
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 151.3789186
+localities: 1
+threads/locality: 20
+
+Threshold:[10]
+fib(45)=1134903170
+seconds: 151.8702091
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 139.3737247
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 149.1954054
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 152.0847157
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 144.6369849
+localities: 1
+threads/locality: 20
+
+Threshold:[16]
+fib(45)=1134903170
+seconds: 151.9377792
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 149.6590010
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 140.7279157
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 141.3132717
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 153.5265912
+localities: 1
+threads/locality: 20
+
+Threshold:[20]
+fib(45)=1134903170
+seconds: 144.5902974
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 153.8719338
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 153.3206484
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 148.2555829
+localities: 1
+threads/locality: 20
+fib(45)=1134903170
+seconds: 146.2227419
+localities: 1
+threads/locality: 20
