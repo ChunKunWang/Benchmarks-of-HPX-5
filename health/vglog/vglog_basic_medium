@@ -1,0 +1,22 @@
+==51912== Memcheck, a memory error detector
+==51912== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==51912== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==51912== Command: ../basic ../input/medium.input
+==51912== Parent PID: 51137
+==51912== 
+==51912== 
+==51912== HEAP SUMMARY:
+==51912==     in use at exit: 60,318,856 bytes in 1,035,989 blocks
+==51912==   total heap usage: 1,035,990 allocs, 1 frees, 60,319,424 bytes allocated
+==51912== 
+==51912== LEAK SUMMARY:
+==51912==    definitely lost: 0 bytes in 0 blocks
+==51912==    indirectly lost: 0 bytes in 0 blocks
+==51912==      possibly lost: 0 bytes in 0 blocks
+==51912==    still reachable: 60,318,856 bytes in 1,035,989 blocks
+==51912==         suppressed: 0 bytes in 0 blocks
+==51912== Reachable blocks (those to which a pointer was found) are not shown.
+==51912== To see them, rerun with: --leak-check=full --show-reachable=yes
+==51912== 
+==51912== For counts of detected and suppressed errors, rerun with: -v
+==51912== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 6 from 6)

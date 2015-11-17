@@ -1,0 +1,72 @@
+==51904== Memcheck, a memory error detector
+==51904== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==51904== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==51904== Command: ../basic ../input/small.input
+==51904== Parent PID: 51137
+==51904== 
+==51904== 
+==51904== HEAP SUMMARY:
+==51904==     in use at exit: 7,989,400 bytes in 137,375 blocks
+==51904==   total heap usage: 137,376 allocs, 1 frees, 7,989,968 bytes allocated
+==51904== 
+==51904== 104 bytes in 1 blocks are possibly lost in loss record 1 of 8
+==51904==    at 0x4A069EE: malloc (vg_replace_malloc.c:270)
+==51904==    by 0x4009E5: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x401A61: main (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904== 
+==51904== 1,872 bytes in 18 blocks are possibly lost in loss record 2 of 8
+==51904==    at 0x4A069EE: malloc (vg_replace_malloc.c:270)
+==51904==    by 0x4009E5: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x400B6E: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x401A61: main (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904== 
+==51904== 8,960 bytes in 160 blocks are possibly lost in loss record 3 of 8
+==51904==    at 0x4A069EE: malloc (vg_replace_malloc.c:270)
+==51904==    by 0x400A39: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x401A61: main (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904== 
+==51904== 33,696 bytes in 324 blocks are possibly lost in loss record 4 of 8
+==51904==    at 0x4A069EE: malloc (vg_replace_malloc.c:270)
+==51904==    by 0x4009E5: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x400B6E: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x400B6E: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x401A61: main (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904== 
+==51904== 80,640 bytes in 1,440 blocks are possibly lost in loss record 5 of 8
+==51904==    at 0x4A069EE: malloc (vg_replace_malloc.c:270)
+==51904==    by 0x400A39: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x400B6E: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x401A61: main (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904== 
+==51904== 606,528 bytes in 5,832 blocks are possibly lost in loss record 6 of 8
+==51904==    at 0x4A069EE: malloc (vg_replace_malloc.c:270)
+==51904==    by 0x4009E5: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x400B6E: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x400B6E: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x400B6E: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x401A61: main (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904== 
+==51904== 725,760 bytes in 12,960 blocks are possibly lost in loss record 7 of 8
+==51904==    at 0x4A069EE: malloc (vg_replace_malloc.c:270)
+==51904==    by 0x400A39: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x400B6E: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x400B6E: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x401A61: main (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904== 
+==51904== 6,531,840 bytes in 116,640 blocks are possibly lost in loss record 8 of 8
+==51904==    at 0x4A069EE: malloc (vg_replace_malloc.c:270)
+==51904==    by 0x400A39: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x400B6E: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x400B6E: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x400B6E: allocate_village.part.0 (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904==    by 0x401A61: main (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/basic)
+==51904== 
+==51904== LEAK SUMMARY:
+==51904==    definitely lost: 0 bytes in 0 blocks
+==51904==    indirectly lost: 0 bytes in 0 blocks
+==51904==      possibly lost: 7,989,400 bytes in 137,375 blocks
+==51904==    still reachable: 0 bytes in 0 blocks
+==51904==         suppressed: 0 bytes in 0 blocks
+==51904== 
+==51904== For counts of detected and suppressed errors, rerun with: -v
+==51904== ERROR SUMMARY: 8 errors from 8 contexts (suppressed: 6 from 6)
