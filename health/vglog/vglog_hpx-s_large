@@ -1,0 +1,1601 @@
+==53203== Memcheck, a memory error detector
+==53203== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==53203== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==53203== Command: ../hpx-s ../input/large.input
+==53203== Parent PID: 53164
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467A66: __intel_sse2_strlen (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44C75A: hwloc_find_linux_cpuset_mntpnt (topology-linux.c:1705)
+==53203==    by 0x444650: hwloc_look_linuxfs (topology-linux.c:3920)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x44C763: hwloc_find_linux_cpuset_mntpnt (topology-linux.c:1706)
+==53203==    by 0x444650: hwloc_look_linuxfs (topology-linux.c:3920)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x44C76D: hwloc_find_linux_cpuset_mntpnt (topology-linux.c:1706)
+==53203==    by 0x444650: hwloc_look_linuxfs (topology-linux.c:3920)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x44C777: hwloc_find_linux_cpuset_mntpnt (topology-linux.c:1706)
+==53203==    by 0x444650: hwloc_look_linuxfs (topology-linux.c:3920)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x44C798: hwloc_find_linux_cpuset_mntpnt (topology-linux.c:1709)
+==53203==    by 0x444650: hwloc_look_linuxfs (topology-linux.c:3920)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x44C06F: look_sysfsnode (topology-linux.c:1963)
+==53203==    by 0x4453FA: hwloc_look_linuxfs (topology-linux.c:3980)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x44C07F: look_sysfsnode (topology-linux.c:1963)
+==53203==    by 0x4453FA: hwloc_look_linuxfs (topology-linux.c:3980)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467A66: __intel_sse2_strlen (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44C07B: look_sysfsnode (topology-linux.c:1963)
+==53203==    by 0x4453FA: hwloc_look_linuxfs (topology-linux.c:3980)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467C70: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AE86: look_sysfscpu (topology-linux.c:3204)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467D93: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AE86: look_sysfscpu (topology-linux.c:3204)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467D9D: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AE86: look_sysfscpu (topology-linux.c:3204)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x467DA4: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AE86: look_sysfscpu (topology-linux.c:3204)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x467DA9: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AE86: look_sysfscpu (topology-linux.c:3204)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467C70: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AEAF: look_sysfscpu (topology-linux.c:3206)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467D93: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AEAF: look_sysfscpu (topology-linux.c:3206)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467D9D: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AEAF: look_sysfscpu (topology-linux.c:3206)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x467DA4: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AEAF: look_sysfscpu (topology-linux.c:3206)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x467DA9: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AEAF: look_sysfscpu (topology-linux.c:3206)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467C70: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AED5: look_sysfscpu (topology-linux.c:3208)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467D93: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AED5: look_sysfscpu (topology-linux.c:3208)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467D9D: __intel_sse2_strncmp (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44AED5: look_sysfscpu (topology-linux.c:3208)
+==53203==    by 0x4452E6: hwloc_look_linuxfs (topology-linux.c:4011)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449ABE: hwloc__get_dmi_id_one_info (topology-linux.c:2239)
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449ACF: hwloc__get_dmi_id_one_info (topology-linux.c:2239)
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449AD4: hwloc__get_dmi_id_one_info (topology-linux.c:2239)
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449AEA: hwloc__get_dmi_id_one_info (topology-linux.c:2240)
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x449AEC: hwloc__get_dmi_id_one_info (topology-linux.c:2241)
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4683FB: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x40ACA6: hwloc_obj_add_info (topology.c:292)
+==53203==    by 0x449AFD: hwloc__get_dmi_id_one_info (topology-linux.c:2243)
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4C1365A: malloc (arena.h:1171)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4C1ADFF: arena_run_reg_dalloc (bitmap.h:206)
+==53203==    by 0x6BFFFFF: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4C13670: malloc (jemalloc_internal.h:579)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4C1ADFF: arena_run_reg_dalloc (bitmap.h:206)
+==53203==    by 0x6BFFFFF: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4C13684: malloc (jemalloc_internal.h:567)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4C1ADFF: arena_run_reg_dalloc (bitmap.h:206)
+==53203==    by 0x6BFFFFF: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08B2A: memcpy (mc_replace_strmem.c:119)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4C1ADFF: arena_run_reg_dalloc (bitmap.h:206)
+==53203==    by 0x6BFFFFF: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08B4C: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4C1ADFF: arena_run_reg_dalloc (bitmap.h:206)
+==53203==    by 0x6BFFFFF: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08BD8: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4C1ADFF: arena_run_reg_dalloc (bitmap.h:206)
+==53203==    by 0x6BFFFFF: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08BFE: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4C1ADFF: arena_run_reg_dalloc (bitmap.h:206)
+==53203==    by 0x6BFFFFF: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08C1B: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4C1ADFF: arena_run_reg_dalloc (bitmap.h:206)
+==53203==    by 0x6BFFFFF: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448971: hwloc__get_dmi_id_info (topology-linux.c:2270)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467A9A: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x449AE6: hwloc__get_dmi_id_one_info (topology-linux.c:2239)
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB1: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x449AE6: hwloc__get_dmi_id_one_info (topology-linux.c:2239)
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB9: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x449AE6: hwloc__get_dmi_id_one_info (topology-linux.c:2239)
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449AEA: hwloc__get_dmi_id_one_info (topology-linux.c:2240)
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x449AEC: hwloc__get_dmi_id_one_info (topology-linux.c:2241)
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x468413: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4C1365A: malloc (arena.h:1171)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4C13670: malloc (jemalloc_internal.h:579)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4C13684: malloc (jemalloc_internal.h:567)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08B2A: memcpy (mc_replace_strmem.c:119)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08B4C: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08BD8: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08BFE: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08C1B: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08C2C: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4A08C40: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4A08C4C: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08C58: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08C72: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4A08C78: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4A08C7F: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08C8A: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x2E2E2E2E2E2E2E2D: ???
+==53203==    by 0x2E2E2E2D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x44898F: hwloc__get_dmi_id_info (topology-linux.c:2271)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467A9A: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x449AE6: hwloc__get_dmi_id_one_info (topology-linux.c:2239)
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB1: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x449AE6: hwloc__get_dmi_id_one_info (topology-linux.c:2239)
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB9: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x449AE6: hwloc__get_dmi_id_one_info (topology-linux.c:2239)
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449AEA: hwloc__get_dmi_id_one_info (topology-linux.c:2240)
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x449AEC: hwloc__get_dmi_id_one_info (topology-linux.c:2241)
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x468413: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4C1365A: malloc (arena.h:1171)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4C13670: malloc (jemalloc_internal.h:579)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4C13684: malloc (jemalloc_internal.h:567)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08B2A: memcpy (mc_replace_strmem.c:119)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08B4C: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08BD8: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08BFE: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08C1B: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08C2C: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4A08C40: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4A08C4C: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08C58: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08C72: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F7071: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x4489E9: hwloc__get_dmi_id_info (topology-linux.c:2274)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449ABE: hwloc__get_dmi_id_one_info (topology-linux.c:2239)
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449ACF: hwloc__get_dmi_id_one_info (topology-linux.c:2239)
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449AD4: hwloc__get_dmi_id_one_info (topology-linux.c:2239)
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449AEA: hwloc__get_dmi_id_one_info (topology-linux.c:2240)
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x449AEC: hwloc__get_dmi_id_one_info (topology-linux.c:2241)
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4683FB: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x40ACA6: hwloc_obj_add_info (topology.c:292)
+==53203==    by 0x449AFD: hwloc__get_dmi_id_one_info (topology-linux.c:2243)
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4C1365A: malloc (arena.h:1171)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F6FFF: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4C13670: malloc (jemalloc_internal.h:579)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F6FFF: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4C13684: malloc (jemalloc_internal.h:567)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F6FFF: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08B2A: memcpy (mc_replace_strmem.c:119)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F6FFF: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08B4C: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F6FFF: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08BD8: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F6FFF: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08BFE: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F6FFF: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08C1B: memcpy (mc_replace_strmem.c:882)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6F697461726F6FFF: ???
+==53203==    by 0x2E00006D: ???
+==53203==    by 0x4: ???
+==53203==    by 0x6C60007: ???
+==53203==    by 0x4C1AE8C: je_arena_dalloc_large (arena.c:2603)
+==53203==    by 0x6C58FFF: ???
+==53203==    by 0x6C5FFFF: ???
+==53203==    by 0x448A07: hwloc__get_dmi_id_info (topology-linux.c:2275)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x448AFD: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x448B0E: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x448B13: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x448B29: hwloc__get_dmi_id_info (topology-linux.c:2240)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x448B2B: hwloc__get_dmi_id_info (topology-linux.c:2241)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4683FB: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x40ACA6: hwloc_obj_add_info (topology.c:292)
+==53203==    by 0x448B42: hwloc__get_dmi_id_info (topology-linux.c:2243)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4C1365A: malloc (arena.h:1171)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x7665642F00003034: ???
+==53203==    by 0x7379732F73656368: ???
+==53203==    by 0x2F7570632F6D6573: ???
+==53203==    by 0x6F742F3931757062: ???
+==53203==    by 0x622F79676F6C6F6F: ???
+==53203==    by 0x690064695F6B6F6E: ???
+==53203==    by 0x5F0073676E696C61: ???
+==53203==    by 0x3006468: ???
+==53203==    by 0x6A00277: ???
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4C13670: malloc (jemalloc_internal.h:579)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x7665642F00003034: ???
+==53203==    by 0x7379732F73656368: ???
+==53203==    by 0x2F7570632F6D6573: ???
+==53203==    by 0x6F742F3931757062: ???
+==53203==    by 0x622F79676F6C6F6F: ???
+==53203==    by 0x690064695F6B6F6E: ???
+==53203==    by 0x5F0073676E696C61: ???
+==53203==    by 0x3006468: ???
+==53203==    by 0x6A00277: ???
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4C13684: malloc (jemalloc_internal.h:567)
+==53203==    by 0x46842B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x7665642F00003034: ???
+==53203==    by 0x7379732F73656368: ???
+==53203==    by 0x2F7570632F6D6573: ???
+==53203==    by 0x6F742F3931757062: ???
+==53203==    by 0x622F79676F6C6F6F: ???
+==53203==    by 0x690064695F6B6F6E: ???
+==53203==    by 0x5F0073676E696C61: ???
+==53203==    by 0x3006468: ???
+==53203==    by 0x6A00277: ???
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4A08B2A: memcpy (mc_replace_strmem.c:119)
+==53203==    by 0x46848B: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x7665642F00003034: ???
+==53203==    by 0x7379732F73656368: ???
+==53203==    by 0x2F7570632F6D6573: ???
+==53203==    by 0x6F742F3931757062: ???
+==53203==    by 0x622F79676F6C6F6F: ???
+==53203==    by 0x690064695F6B6F6E: ???
+==53203==    by 0x5F0073676E696C61: ???
+==53203==    by 0x3006468: ???
+==53203==    by 0x6A00277: ???
+==53203== 
+==53203== 
+==53203== More than 100 errors detected.  Subsequent errors
+==53203== will still be recorded, but in less detail than before.
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467A9A: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x448D8F: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB1: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x448D8F: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB9: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x448D8F: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x448D93: hwloc__get_dmi_id_info (topology-linux.c:2240)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x448D95: hwloc__get_dmi_id_info (topology-linux.c:2241)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x468413: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x7465737341206471: ???
+==53203==    by 0x6761541F: ???
+==53203==    by 0x3600FFF: ???
+==53203==    by 0x6A00277: ???
+==53203==    by 0x4C200C6: arena_run_split_small (arena.c:531)
+==53203==    by 0x700000000: ???
+==53203==    by 0x70000003D: ???
+==53203==    by 0x6C829FF: ???
+==53203==    by 0x4E57E07: ???
+==53203==    by 0x6000A30: ??? (in /hpc/shared/apps/RHEL-6/x86_64/intel/14.0.2/composer_xe_2013_sp1.2.144/compiler/lib/intel64/libsvml.so)
+==53203==    by 0xA323100000E: ???
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467A9A: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x448ED6: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB1: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x448ED6: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB9: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x448ED6: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x448EDA: hwloc__get_dmi_id_info (topology-linux.c:2240)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x448EDC: hwloc__get_dmi_id_info (topology-linux.c:2241)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x468413: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x6E697475706D6F42: ???
+==53203==    by 0x6000066: ??? (in /hpc/shared/apps/RHEL-6/x86_64/intel/14.0.2/composer_xe_2013_sp1.2.144/compiler/lib/intel64/libsvml.so)
+==53203==    by 0x13: ???
+==53203==    by 0x6C73FFF: ???
+==53203==    by 0x68C89E7: ???
+==53203==    by 0x6C7D6FF: ???
+==53203==    by 0x700000000: ???
+==53203==    by 0x70000003D: ???
+==53203==    by 0x6C829FF: ???
+==53203==    by 0x4E57E07: ???
+==53203==    by 0x6000A30: ??? (in /hpc/shared/apps/RHEL-6/x86_64/intel/14.0.2/composer_xe_2013_sp1.2.144/compiler/lib/intel64/libsvml.so)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x448FE7: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x448FF8: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x448FFD: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449013: hwloc__get_dmi_id_info (topology-linux.c:2240)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x449015: hwloc__get_dmi_id_info (topology-linux.c:2241)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449118: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449129: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x44912E: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449144: hwloc__get_dmi_id_info (topology-linux.c:2240)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x449146: hwloc__get_dmi_id_info (topology-linux.c:2241)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467A9A: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4493C4: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB1: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4493C4: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB9: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4493C4: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4493C8: hwloc__get_dmi_id_info (topology-linux.c:2240)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4493CA: hwloc__get_dmi_id_info (topology-linux.c:2241)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467A9A: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4494F3: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB1: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4494F3: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB9: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x4494F3: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x4494F7: hwloc__get_dmi_id_info (topology-linux.c:2240)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x4494F9: hwloc__get_dmi_id_info (topology-linux.c:2241)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467A9A: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44962C: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB1: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44962C: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB9: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x44962C: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449630: hwloc__get_dmi_id_info (topology-linux.c:2240)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x449632: hwloc__get_dmi_id_info (topology-linux.c:2241)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x468413: __intel_sse2_strdup (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x302E31302E423637: ???
+==53203==    by 0x302E383030312E30: ???
+==53203==    by 0x3135313032393132: ???
+==53203==    by 0x313332: ???
+==53203==    by 0x6C66FFF: ???
+==53203==    by 0x6C66FFF: ???
+==53203==    by 0x6C66FFF: ???
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449735: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449746: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x44974B: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x449761: hwloc__get_dmi_id_info (topology-linux.c:2240)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x449763: hwloc__get_dmi_id_info (topology-linux.c:2241)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467A9A: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x449898: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB1: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x449898: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x467AB9: __intel_sse2_strchr (in /hpc/shared/home/amos/HPX_Release_v1.3.0/hpx/workpool/health/hpx-s)
+==53203==    by 0x449898: hwloc__get_dmi_id_info (topology-linux.c:2239)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Conditional jump or move depends on uninitialised value(s)
+==53203==    at 0x44989C: hwloc__get_dmi_id_info (topology-linux.c:2240)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Use of uninitialised value of size 8
+==53203==    at 0x44989E: hwloc__get_dmi_id_info (topology-linux.c:2241)
+==53203==    by 0x4447AA: hwloc_look_linuxfs (topology-linux.c:4020)
+==53203==    by 0x40EE1D: hwloc_discover (topology.c:2425)
+==53203==    by 0x40E815: hwloc_topology_load (topology.c:2909)
+==53203==    by 0x40699C: hpx_init (hpx.c:149)
+==53203==    by 0x403BE6: main (health_hpx_seq.c:582)
+==53203== 
+==53203== Syscall param sched_setaffinity(mask) points to unaddressable byte(s)
+==53203==    at 0x307E6E5199: syscall (in /lib64/libc-2.12.so)
+==53203==    by 0x4F0E208: __kmp_affinity_determine_capable (z_Linux_util.c:284)
+==53203==    by 0x4EF668A: __kmp_env_initialize(char const*) (kmp_settings.c:5253)
+==53203==    by 0x4EE740E: __kmp_do_serial_initialize() (kmp_runtime.c:7987)
+==53203==    by 0x4EDA074: __kmp_get_global_thread_id_reg (kmp_runtime.c:320)
+==53203==    by 0x4ECD509: omp_init_lock@@VERSION (kmp_ftn_entry.h:837)
+==53203==    by 0x405FF1: _health_main_action (health_hpx_seq.c:124)
+==53203==    by 0x408258: action_execute (action.c:334)
+==53203==    by 0x41E8B9: _execute_thread (worker.c:228)
+==53203==    by 0x6CC4FFF: ???
+==53203==    by 0x41E89F: thread_delete (thread.c:146)
+==53203==    by 0x6CD1FF7: ???
+==53203==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==53203== 
+==53203== 
+==53203== HEAP SUMMARY:
+==53203==     in use at exit: 0 bytes in 0 blocks
+==53203==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==53203== 
+==53203== All heap blocks were freed -- no leaks are possible
+==53203== 
+==53203== For counts of detected and suppressed errors, rerun with: -v
+==53203== Use --track-origins=yes to see where uninitialised values come from
+==53203== ERROR SUMMARY: 1083 errors from 149 contexts (suppressed: 6 from 6)
