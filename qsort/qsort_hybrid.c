@@ -26,10 +26,11 @@
 #include <sys/time.h>
 #include <string.h>
 #include <omp.h>
+#include <cilk/cilk.h>
 #include "hpx/hpx.h"
 
 #define DNUM 1000000
-#define THREAD_LEVEL 10000
+#define THREAD_LEVEL 100000
 
 static void _usage(FILE *f, int error) {
 	fprintf(f, "Usage: hybrid [options] NUMBER\n"
@@ -44,6 +45,8 @@ void swap(double lyst[], int i, int j);
 int partition(double lyst[], int lo, int hi);
 void quicksortHelper(double lyst[], int lo, int hi);
 void quicksort(double lyst[], int size);
+void Cilk_quicksortHelper(double lyst[], int lo, int hi);
+void Cilk_quicksort(double lyst[], int size);
 void OMP_quicksortHelper(double lyst[], int lo, int hi);
 void OMP_quicksort(double lyst[], int size);
 int isSorted(double lyst[], int size);
@@ -105,6 +108,14 @@ static int _main_action(uint64_t *args, size_t size) {
 	printf("OpenMP quicksort took: %g ms. \n", hpx_time_elapsed_ms(start));
 	if (!isSorted(lyst, NUM)) {
 		printf("Oops, lyst did not get sorted by OMP_quicksort.\n");
+	}
+
+	//Cilk quicksort, and timing
+	start = hpx_time_now();
+	Cilk_quicksort(lyst, NUM);
+	printf("Cilk quicksort took: %g ms. \n", hpx_time_elapsed_ms(start));
+	if (!isSorted(lyst, NUM)) {
+		printf("Oops, lyst did not get sorted by Cilk_quicksort.\n");
 	}
 
 	//Now, parallel quicksort.
@@ -176,6 +187,20 @@ int main (int argc, char *argv[])
 	e = hpx_run(&_main, &NUM, sizeof(NUM));
 	hpx_finalize();
 	return e;
+}
+
+void Cilk_quicksort(double lyst[], int size)
+{
+	Cilk_quicksortHelper(lyst, 0, size-1);
+}
+
+void Cilk_quicksortHelper(double lyst[], int lo, int hi)
+{
+	if (lo >= hi) return;
+	int b = partition(lyst, lo, hi);
+	cilk_spawn Cilk_quicksortHelper(lyst, lo, b-1);
+	cilk_spawn Cilk_quicksortHelper(lyst, b+1, hi);
+	cilk_sync;
 }
 
 void OMP_quicksort(double lyst[], int size)
@@ -363,3 +388,4 @@ int compare_doubles (const void *a, const void *b)
 
 	return (*da > *db) - (*da < *db);
 }
+
