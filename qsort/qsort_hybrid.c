@@ -10,14 +10,6 @@
 //  This software was created at the Indiana University Center for Research in
 //  Extreme Scale Technologies (CREST).
 // =============================================================================
-
-/*
-   -Joshua Stough
-   -Washington and Lee University
-   -Quicksort a random list of size given by the argument (default 1M)
-   -Time both sequential quicksort and parallel.
-   -$ ./quicksort [1000000]
-   */
 #include <stdio.h>
 #include <stdlib.h>
 #include <inttypes.h>
@@ -73,7 +65,9 @@ int compare_doubles (const void *a, const void *b);
    Main action:
    -generate random list
    -time sequential quicksort
-   -time parallel quicksort
+   -time OpenMP quicksort
+   -time Cilk quicksort
+   -time hpx-5 parallel quicksort
    -time standard qsort
    */
 static int _main_action(uint64_t *args, size_t size) {
@@ -145,6 +139,11 @@ static int _main_action(uint64_t *args, size_t size) {
 
 int main (int argc, char *argv[])
 {
+	if (hpx_init(&argc, &argv) != 0) {
+		fprintf(stderr, "HPX: failed to initialize.\n");
+		return -1;
+	}
+
 	int opt = 0;
 	srand(time(NULL)); //seed random
 	uint64_t NUM = DNUM;
@@ -172,19 +171,13 @@ int main (int argc, char *argv[])
 			break;
 	}
 
-	int e = hpx_init(&argc, &argv);
-	if (e) {
-		fprintf(stderr, "HPX: failed to initialize.\n");
-		return e;
-	}
-
 	// Register the main action
 	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _main, _main_action,
 			HPX_POINTER, HPX_SIZE_T);
 	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _parallelQuicksortHelper,
 			_parallelQuicksortHelper_action, HPX_POINTER, HPX_SIZE_T);
 	// Run the main action
-	e = hpx_run(&_main, &NUM, sizeof(NUM));
+	int e = hpx_run(&_main, &NUM, sizeof(NUM));
 	hpx_finalize();
 	return e;
 }
