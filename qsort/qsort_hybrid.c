@@ -19,6 +19,8 @@ bool RUN_OPENMP = false;
 bool RUN_SEQ    = false;
 bool RUN_IN     = false;
 bool SET_SEED   = false;
+bool SORTED_AS  = false;
+bool SORTED_DE  = false;
 
 uint64_t SEED = 0;
 
@@ -30,6 +32,8 @@ static void _usage(FILE *f, int error) {
 			"\t-o, OpenMP qsort\n"
 			"\t-s, Sequential qsort\n"
 			"\t-b, Build-in qsort\n"
+			"\t-a, Set ascending input\n"
+			"\t-r, Set descending input\n"
 			"\t-i, Set seed\n"
 			"\t-?, show HPX-5 options\n"
 			"\t-h, show help\n");
@@ -47,6 +51,7 @@ void Cilk_quicksort(double lyst[], int size);
 void OMP_quicksortHelper(double lyst[], int lo, int hi);
 void OMP_quicksort(double lyst[], int size);
 int isSorted(double lyst[], int size);
+int isReSorted(double lyst[], int size);
 
 static hpx_action_t _main = 0;
 static hpx_action_t _parallelQuicksortHelper = 0;
@@ -68,6 +73,7 @@ struct thread_data{
 
 //for the builtin libc qsort:
 int compare_doubles (const void *a, const void *b);
+int re_compare_doubles (const void *a, const void *b);
 
 /*
    Main action:
@@ -98,6 +104,25 @@ static int _main_action(uint64_t *args, size_t size) {
 		//printf("%f ", lystbck[i]);
 	}
 	printf("finish!\n");
+
+	if( SORTED_AS || SORTED_DE ) {
+		if( SORTED_AS ) {
+			start = hpx_time_now();
+			qsort(lystbck, NUM, sizeof(double), compare_doubles);
+			printf("Generating ascending input: %g ms. \n", hpx_time_elapsed_ms(start));
+			if (!isSorted(lystbck, NUM))
+				printf("Oops, lystbck did not get ascending sorted.\n");
+		}
+		else {
+			start = hpx_time_now();
+			qsort(lystbck, NUM, sizeof(double), re_compare_doubles);
+			printf("Generating descending input: %g ms. \n", hpx_time_elapsed_ms(start));
+			if (!isReSorted(lystbck, NUM))
+				printf("Oops, lystbck did not get descending sorted.\n");
+		}
+		//for (int i = 0; i < NUM; i ++) 
+		//	printf("%f ", lystbck[i]);
+	}
 
 	//HPX-5 parallel quicksort.
 	if( RUN_HPX_TL ) {
@@ -186,8 +211,14 @@ int main (int argc, char *argv[])
 	int opt = 0;
 	uint64_t NUM = DNUM;
 
-	while ((opt = getopt(argc, argv,  "h?bscoxil")) != -1) {
+	while ((opt = getopt(argc, argv,  "h?bscoxilar")) != -1) {
 		switch (opt) {
+			case 'a':
+				SORTED_AS = true;
+				break;
+			case 'r':
+				SORTED_DE = true;
+				break;
 			case 'l':
 				RUN_HPX_TL = true;
 				break;
@@ -535,6 +566,17 @@ int isSorted(double lyst[], int size)
 	return 1;
 }
 
+int isReSorted(double lyst[], int size)
+{
+	for (int i = 1; i < size; i ++) {
+		if (lyst[i] > lyst[i-1]) {
+			printf("at loc %d, %f > %f \n", i, lyst[i], lyst[i-1]);
+			return 0;
+		}
+	}
+	return 1;
+}
+
 //for the built-in qsort comparator
 //from http://www.gnu.org/software/libc/manual/html_node/Comparison-Functions.html#Comparison-Functions
 int compare_doubles (const void *a, const void *b)
@@ -543,5 +585,13 @@ int compare_doubles (const void *a, const void *b)
 	const double *db = (const double *) b;
 
 	return (*da > *db) - (*da < *db);
+}
+
+int re_compare_doubles (const void *a, const void *b)
+{
+	const double *da = (const double *) a;
+	const double *db = (const double *) b;
+
+	return (*da < *db) - (*da > *db);
 }
 
