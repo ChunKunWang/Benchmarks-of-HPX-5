@@ -1,6 +1,6 @@
 #!/bin/sh
 
-code="qsort_hybrid.c"
+code="qsort_hybrid"
 exe_hpx="hybrid"
 
 path="/home/amos/amos/HPX_Release_v1.3.0/hpx"
