@@ -26,7 +26,7 @@ uint64_t SEED = 0;
 
 static void _usage(FILE *f, int error) {
 	fprintf(f, "Usage: hybrid [options] [-i SEED] NUMBER\n"
-			"\t-x, HPX-5 qsort (default)\n"
+			"\t-x, HPX-5 qsort\n"
 			"\t-l, HPX-5 with thread level control\n"
 			"\t-c, Cilk qsort\n"
 			"\t-o, OpenMP qsort\n"
@@ -88,8 +88,14 @@ static int _main_action(uint64_t *args, size_t size) {
 	hpx_time_t start;
 	uint64_t NUM = *args;
 
-	if( SET_SEED ) srand(SEED);
-	else srand(time(NULL)); //seed random
+	if( SET_SEED ) {
+		printf("Seed[%"PRIu64"], ", SEED);
+		srand(SEED);
+	}
+	else {
+		printf("Seed[%"PRIu64"], ", time(NULL));
+		srand(time(NULL)); //seed random
+	}
 
 	printf("# of elements: %"PRIu64"\n", NUM);
 	printf("Generating random data... ");
