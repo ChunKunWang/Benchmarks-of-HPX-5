@@ -125,26 +125,26 @@ static int _main_action(uint64_t *args, size_t size) {
 	}
 
 	//HPX-5 parallel quicksort.
-	if( RUN_HPX_TL ) {
+	if( RUN_HPX ) {
 		//copy list.
 		memcpy(lyst, lystbck, NUM*sizeof(double));
 		start = hpx_time_now();
 		NoTLQuicksort(lyst, NUM);
 		printf("HPX-5 quicksort       : %g ms.\n", hpx_time_elapsed_ms(start));
 		if (!isSorted(lyst, NUM)) {
-			printf("Oops, lyst did not get sorted by hpx-5 LT parallelQuicksort.\n");
+			printf("Oops, lyst did not get sorted by hpx-5 parallelQuicksort.\n");
 		}
 	}
 
 	//HPX-5 parallel quicksort with thread level control.
-	if( RUN_HPX ) {
+	if( RUN_HPX_TL ) {
 		//copy list.
 		memcpy(lyst, lystbck, NUM*sizeof(double));
 		start = hpx_time_now();
 		parallelQuicksort(lyst, NUM, THREAD_LEVEL);
 		printf("HPX-5 with TL control : %g ms.\n", hpx_time_elapsed_ms(start));
 		if (!isSorted(lyst, NUM)) {
-			printf("Oops, lyst did not get sorted by hpx-5 parallelQuicksort.\n");
+			printf("Oops, lyst did not get sorted by hpx-5 LT parallelQuicksort.\n");
 		}
 	}
 	
