@@ -10,7 +10,6 @@
 #include "hpx/hpx.h"
 
 #define DNUM 1000000
-#define THREAD_LEVEL 20
 
 bool RUN_HPX    = false;
 bool RUN_HPX_TL = false;
@@ -21,11 +20,13 @@ bool RUN_IN     = false;
 bool SET_SEED   = false;
 bool SORTED_AS  = false;
 bool SORTED_DE  = false;
+bool THREAD_LV  = false;
 
 uint64_t SEED = 0;
+int THREAD_LEVEL = 20;
 
 static void _usage(FILE *f, int error) {
-	fprintf(f, "Usage: hybrid [options] [-i SEED] NUMBER\n"
+	fprintf(f, "Usage: hybrid [options] [-i SEED] [-t LEVEL] NUMBER\n"
 			"\t-x, HPX-5 qsort\n"
 			"\t-l, HPX-5 with thread level control\n"
 			"\t-c, Cilk qsort\n"
@@ -35,7 +36,8 @@ static void _usage(FILE *f, int error) {
 			"\t-a, Set ascending input\n"
 			"\t-r, Set descending input\n"
 			"\t-i, Set seed\n"
-			"\t-?, show HPX-5 options\n"
+			"\t-t, Set thread level threshold\n"
+			"\t-p, show HPX-5 options\n"
 			"\t-h, show help\n");
 	fflush(f);
 	exit(error);
@@ -146,6 +148,7 @@ static int _main_action(uint64_t *args, size_t size) {
 	if( RUN_HPX_TL ) {
 		//copy list.
 		memcpy(lyst, lystbck, NUM*sizeof(double));
+		if(THREAD_LV) printf("Setting thread-level as %d.\n", THREAD_LEVEL);
 		start = hpx_time_now();
 		parallelQuicksort(lyst, NUM, THREAD_LEVEL);
 		printf("HPX-5 with TL control : %g ms.\n", hpx_time_elapsed_ms(start));
@@ -153,7 +156,7 @@ static int _main_action(uint64_t *args, size_t size) {
 			printf("Oops, lyst did not get sorted by hpx-5 LT parallelQuicksort.\n");
 		}
 	}
-	
+
 	//Cilk quicksort, and timing
 	if( RUN_CILK ) {
 		//copy list.
@@ -217,10 +220,14 @@ int main (int argc, char *argv[])
 	int opt = 0;
 	uint64_t NUM = DNUM;
 
-	while ((opt = getopt(argc, argv,  "h?bscoxilar")) != -1) {
+	while ((opt = getopt(argc, argv,  "h?bscoxlarpt:i:")) != -1) {
 		switch (opt) {
 			case 'a':
 				SORTED_AS = true;
+				break;
+			case 't':
+				THREAD_LEVEL = atoi(optarg);
+				THREAD_LV = true;
 				break;
 			case 'r':
 				SORTED_DE = true;
@@ -229,6 +236,7 @@ int main (int argc, char *argv[])
 				RUN_HPX_TL = true;
 				break;
 			case 'i':
+				SEED = atoi(optarg);
 				SET_SEED = true;
 				break;
 			case 'b':
@@ -248,8 +256,10 @@ int main (int argc, char *argv[])
 				break;
 			case 'h':
 				_usage(stdout, EXIT_SUCCESS);
-			case '?':
+			case 'p':
 				hpx_print_help();
+				exit(EXIT_SUCCESS);
+			case '?':
 				exit(EXIT_SUCCESS);
 			default:
 				_usage(stderr, EXIT_FAILURE);
@@ -266,10 +276,6 @@ int main (int argc, char *argv[])
 			_usage(stderr, EXIT_FAILURE);
 		case 1:
 			NUM = atoi(argv[0]);
-			break;
-		case 2:
-			SEED = atoi(argv[0]);
-			NUM = atoi(argv[1]);
 			break;
 	}
 
