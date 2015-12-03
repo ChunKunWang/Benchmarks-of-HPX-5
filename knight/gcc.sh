@@ -1,10 +1,20 @@
 #!/bin/sh
+code_1="knight_task"
+code_2="knight_cilk"
 
-rm basic omp omp-icc
+exe_seq="basic"
+exe_omp="omp"
+exe_icc="omp-icc"
+exe_cilk_icc="cilk-icc"
 
-/hpc_shared/apps/RHEL-6/x86_64/gcc/gcc-4.9.1/bin/gcc -O2 -o basic knight_task.c
+rm ${exe_seq} ${exe_omp} ${exe_icc} ${exe_cilk_icc}
 
-/hpc_shared/apps/RHEL-6/x86_64/gcc/gcc-4.9.1/bin/gcc -O2 -fopenmp -o omp knight_task.c
+/hpc_shared/apps/RHEL-6/x86_64/gcc/gcc-4.9.1/bin/gcc -O2 -o ${exe_seq} ${code_1}.c &&\
 
-/hpc/shared/apps/RHEL-6/x86_64/intel/14.0.2/bin/icc -O2 -openmp -o omp-icc knight_task.c
+/hpc_shared/apps/RHEL-6/x86_64/gcc/gcc-4.9.1/bin/gcc -O2 -fopenmp -o ${exe_omp} ${code_1}.c &&\
+
+/hpc/shared/apps/RHEL-6/x86_64/intel/14.0.2/bin/icc -O2 -openmp -o ${exe_icc} ${code_1}.c &&\
+
+/hpc/shared/apps/RHEL-6/x86_64/intel/14.0.2/bin/icc -O2 -o ${exe_cilk_icc} ${code_2}.c
+
 
