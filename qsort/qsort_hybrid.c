@@ -20,6 +20,7 @@ bool RUN_IN     = false;
 bool SET_SEED   = false;
 bool SORTED_AS  = false;
 bool SORTED_DE  = false;
+bool INFO       = false;
 bool THREAD_LV  = false;
 
 uint64_t SEED = 0;
@@ -37,6 +38,7 @@ static void _usage(FILE *f, int error) {
 			"\t-r, Set descending input\n"
 			"\t-i, Set seed\n"
 			"\t-t, Set thread level threshold\n"
+			"\t-f, Show input sequence info\n"
 			"\t-p, show HPX-5 options\n"
 			"\t-h, show help\n");
 	fflush(f);
@@ -54,6 +56,7 @@ void OMP_quicksortHelper(double lyst[], int lo, int hi);
 void OMP_quicksort(double lyst[], int size);
 int isSorted(double lyst[], int size);
 int isReSorted(double lyst[], int size);
+int countSorted(double lyst[], int size);
 
 static hpx_action_t _main = 0;
 static hpx_action_t _parallelQuicksortHelper = 0;
@@ -106,17 +109,17 @@ static int _main_action(uint64_t *args, size_t size) {
 	double *lystbck = (double *) malloc(NUM*sizeof(double));
 	double *lyst = (double *) malloc(NUM*sizeof(double));
 
-	FILE *fp;
-	fp = fopen("input", "w");
+	//FILE *fp;
+	//fp = fopen("input", "w");
 	//Populate random original/backup list.
 	for (int i = 0; i < NUM; i ++) {
 		lystbck[i] = 1.0*rand()/RAND_MAX;
-		fprintf(fp, "%f\n", lystbck[i]);
+		//fprintf(fp, "%f\n", lystbck[i]);
 		//printf("%f ", lystbck[i]);
 	}
 	printf("finish!\n");
-	fclose(fp);
-
+	//fclose(fp);
+ 
 	if( SORTED_AS || SORTED_DE ) {
 		if( SORTED_AS ) {
 			start = hpx_time_now();
@@ -135,6 +138,9 @@ static int _main_action(uint64_t *args, size_t size) {
 		//for (int i = 0; i < NUM; i ++) 
 		//	printf("%f ", lystbck[i]);
 	}
+
+	//Show input sequence info
+	if( INFO ) countSorted(lystbck, NUM);
 
 	//HPX-5 parallel quicksort.
 	if( RUN_HPX ) {
@@ -224,7 +230,7 @@ int main (int argc, char *argv[])
 	int opt = 0;
 	uint64_t NUM = DNUM;
 
-	while ((opt = getopt(argc, argv,  "h?bscoxlarpt:i:")) != -1) {
+	while ((opt = getopt(argc, argv,  "h?bscoxlfarpt:i:")) != -1) {
 		switch (opt) {
 			case 'a':
 				SORTED_AS = true;
@@ -232,6 +238,9 @@ int main (int argc, char *argv[])
 			case 't':
 				THREAD_LEVEL = atoi(optarg);
 				THREAD_LV = true;
+				break;
+			case 'f':
+				INFO = true;
 				break;
 			case 'r':
 				SORTED_DE = true;
@@ -590,6 +599,22 @@ int isReSorted(double lyst[], int size)
 			return 0;
 		}
 	}
+	return 1;
+}
+
+int countSorted(double lyst[], int size)
+{
+	int counter=0;
+
+	for (int i = 1; i < size; i ++) {
+		if (lyst[i] > lyst[i-1]) {
+			//printf("at loc %d, %f < %f \n", i, lyst[i], lyst[i-1]);
+			counter++;
+			//return 0;
+		}
+	}
+	printf("# of ascending element: %d (%.2f%)", counter, (float)counter/size * 100);
+
 	return 1;
 }
 
