@@ -106,12 +106,16 @@ static int _main_action(uint64_t *args, size_t size) {
 	double *lystbck = (double *) malloc(NUM*sizeof(double));
 	double *lyst = (double *) malloc(NUM*sizeof(double));
 
+	FILE *fp;
+	fp = fopen("input", "w");
 	//Populate random original/backup list.
 	for (int i = 0; i < NUM; i ++) {
 		lystbck[i] = 1.0*rand()/RAND_MAX;
+		fprintf(fp, "%f\n", lystbck[i]);
 		//printf("%f ", lystbck[i]);
 	}
 	printf("finish!\n");
+	fclose(fp);
 
 	if( SORTED_AS || SORTED_DE ) {
 		if( SORTED_AS ) {
