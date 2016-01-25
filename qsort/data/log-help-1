@@ -1,0 +1,126 @@
+
+Tasks:[0]
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116333 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116176 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 117291 ms.
+
+
+Tasks:[1]
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 115854 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 115967 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116085 ms.
+
+
+Tasks:[2]
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116909 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116833 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116849 ms.
+
+
+Tasks:[4]
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116849 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 117001 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116884 ms.
+
+
+Tasks:[6]
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 117424 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116996 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116826 ms.
+
+
+Tasks:[8]
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 117364 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116396 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116222 ms.
+
+
+Tasks:[10]
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116822 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116289 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116838 ms.
+
+
+Tasks:[16]
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116920 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116870 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 117393 ms.
+
+
+Tasks:[20]
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116818 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 116889 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 117419 ms.
+

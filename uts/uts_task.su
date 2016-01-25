@@ -1,0 +1,15 @@
+uts_task.c:146:9:parallel_uts._omp_fn.0	48	dynamic,bounded
+uts_task.c:70:8:rng_toProb	16	static
+uts_task.c:78:6:uts_initRoot	8	static
+uts_task.c:87:5:uts_numChildren_bin	16	static
+uts_task.c:96:5:uts_numChildren	32	static
+uts_task.c:126:5:getNumRootChildren	16	static
+uts_task.c:136:11:parallel_uts	48	static
+uts_task.c:168:11:parTreeSearch	176	dynamic
+uts_task.c:187:9:parTreeSearch._omp_fn.2	32	static
+uts_task.c:153:9:parallel_uts._omp_fn.1	32	static
+uts_task.c:200:6:uts_read_file	64	dynamic,bounded
+uts_task.c:238:6:uts_show_stats	16	static
+uts_task.c:254:5:uts_check_result	16	static
+uts_task.c:267:6:bots_usecs	32	static
+uts_task.c:274:5:main	304	static

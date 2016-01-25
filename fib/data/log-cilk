@@ -1,0 +1,56 @@
+
+Input:[20]
+Cilk took 0.120000 sec
+Fibonacci result for 20 is 6765
+Cilk took 0.130000 sec
+Fibonacci result for 20 is 6765
+Cilk took 0.180000 sec
+Fibonacci result for 20 is 6765
+
+Input:[25]
+Cilk took 0.010000 sec
+Fibonacci result for 25 is 75025
+Cilk took 0.220000 sec
+Fibonacci result for 25 is 75025
+Cilk took 0.140000 sec
+Fibonacci result for 25 is 75025
+
+Input:[30]
+Cilk took 0.290000 sec
+Fibonacci result for 30 is 832040
+Cilk took 0.160000 sec
+Fibonacci result for 30 is 832040
+Cilk took 0.200000 sec
+Fibonacci result for 30 is 832040
+
+Input:[35]
+Cilk took 1.350000 sec
+Fibonacci result for 35 is 9227465
+Cilk took 1.300000 sec
+Fibonacci result for 35 is 9227465
+Cilk took 1.130000 sec
+Fibonacci result for 35 is 9227465
+
+Input:[40]
+Cilk took 11.820000 sec
+Fibonacci result for 40 is 102334155
+Cilk took 11.630000 sec
+Fibonacci result for 40 is 102334155
+Cilk took 11.900000 sec
+Fibonacci result for 40 is 102334155
+
+Input:[45]
+Cilk took 129.180000 sec
+Fibonacci result for 45 is 1134903170
+Cilk took 129.050000 sec
+Fibonacci result for 45 is 1134903170
+Cilk took 129.240000 sec
+Fibonacci result for 45 is 1134903170
+
+Input:[50]
+Cilk took 1429.610000 sec
+Fibonacci result for 50 is -298632863
+Cilk took 1430.010000 sec
+Fibonacci result for 50 is -298632863
+Cilk took 1430.130000 sec
+Fibonacci result for 50 is -298632863

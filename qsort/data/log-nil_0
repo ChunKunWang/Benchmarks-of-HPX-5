@@ -1,0 +1,232 @@
+
+Input:[100]
+Seed[0], # of elements: 100
+Generating random data... finish!
+HPX-5 quicksort       : 0.023021 ms.
+HPX-5 with TL control : 0.809234 ms.
+Cilk quicksort        : 22.8039 ms. 
+OpenMP quicksort      : 52.0847 ms. 
+Sequential quicksort  : 0.004688 ms. 
+Built-in qsort        : 0.008814 ms.
+
+Seed[0], # of elements: 100
+Generating random data... finish!
+HPX-5 quicksort       : 0.020402 ms.
+HPX-5 with TL control : 1.41438 ms.
+Cilk quicksort        : 19.4172 ms. 
+OpenMP quicksort      : 54.701 ms. 
+Sequential quicksort  : 0.004738 ms. 
+Built-in qsort        : 0.010355 ms.
+
+Seed[0], # of elements: 100
+Generating random data... finish!
+HPX-5 quicksort       : 0.020054 ms.
+HPX-5 with TL control : 2.66244 ms.
+Cilk quicksort        : 20.179 ms. 
+OpenMP quicksort      : 39.0876 ms. 
+Sequential quicksort  : 0.004711 ms. 
+Built-in qsort        : 0.008951 ms.
+
+
+Input:[1000]
+Seed[0], # of elements: 1000
+Generating random data... finish!
+HPX-5 quicksort       : 0.813726 ms.
+HPX-5 with TL control : 4.59558 ms.
+Cilk quicksort        : 23.7932 ms. 
+OpenMP quicksort      : 36.311 ms. 
+Sequential quicksort  : 0.061599 ms. 
+Built-in qsort        : 0.097582 ms.
+
+Seed[0], # of elements: 1000
+Generating random data... finish!
+HPX-5 quicksort       : 0.799665 ms.
+HPX-5 with TL control : 3.73329 ms.
+Cilk quicksort        : 25.7421 ms. 
+OpenMP quicksort      : 38.0988 ms. 
+Sequential quicksort  : 0.060502 ms. 
+Built-in qsort        : 0.099665 ms.
+
+Seed[0], # of elements: 1000
+Generating random data... finish!
+HPX-5 quicksort       : 1.53068 ms.
+HPX-5 with TL control : 6.82292 ms.
+Cilk quicksort        : 23.8424 ms. 
+OpenMP quicksort      : 38.052 ms. 
+Sequential quicksort  : 0.107171 ms. 
+Built-in qsort        : 0.146082 ms.
+
+
+Input:[10000]
+Seed[0], # of elements: 10000
+Generating random data... finish!
+HPX-5 quicksort       : 0.981876 ms.
+HPX-5 with TL control : 6.77144 ms.
+Cilk quicksort        : 23.6908 ms. 
+OpenMP quicksort      : 33.3482 ms. 
+Sequential quicksort  : 0.7535 ms. 
+Built-in qsort        : 1.20025 ms.
+
+Seed[0], # of elements: 10000
+Generating random data... finish!
+HPX-5 quicksort       : 1.04285 ms.
+HPX-5 with TL control : 5.19698 ms.
+Cilk quicksort        : 23.2305 ms. 
+OpenMP quicksort      : 52.1904 ms. 
+Sequential quicksort  : 0.751452 ms. 
+Built-in qsort        : 1.20606 ms.
+
+Seed[0], # of elements: 10000
+Generating random data... finish!
+HPX-5 quicksort       : 0.926271 ms.
+HPX-5 with TL control : 6.52636 ms.
+Cilk quicksort        : 17.5851 ms. 
+OpenMP quicksort      : 82.4477 ms. 
+Sequential quicksort  : 0.792014 ms. 
+Built-in qsort        : 1.2685 ms.
+
+
+Input:[100000]
+Seed[0], # of elements: 100000
+Generating random data... finish!
+HPX-5 quicksort       : 6.98988 ms.
+HPX-5 with TL control : 9.35225 ms.
+Cilk quicksort        : 26.7628 ms. 
+OpenMP quicksort      : 62.6295 ms. 
+Sequential quicksort  : 9.26891 ms. 
+Built-in qsort        : 15.155 ms.
+
+Seed[0], # of elements: 100000
+Generating random data... finish!
+HPX-5 quicksort       : 7.359 ms.
+HPX-5 with TL control : 9.67035 ms.
+Cilk quicksort        : 17.1628 ms. 
+OpenMP quicksort      : 28.9018 ms. 
+Sequential quicksort  : 9.77382 ms. 
+Built-in qsort        : 15.8336 ms.
+
+Seed[0], # of elements: 100000
+Generating random data... finish!
+HPX-5 quicksort       : 7.10178 ms.
+HPX-5 with TL control : 10.0048 ms.
+Cilk quicksort        : 26.7386 ms. 
+OpenMP quicksort      : 45.8326 ms. 
+Sequential quicksort  : 14.24 ms. 
+Built-in qsort        : 23.3957 ms.
+
+
+Input:[1000000]
+Seed[0], # of elements: 1000000
+Generating random data... finish!
+HPX-5 quicksort       : 75.8572 ms.
+HPX-5 with TL control : 26.1023 ms.
+Cilk quicksort        : 30.2862 ms. 
+OpenMP quicksort      : 97.2243 ms. 
+Sequential quicksort  : 114.18 ms. 
+Built-in qsort        : 189.335 ms.
+
+Seed[0], # of elements: 1000000
+Generating random data... finish!
+HPX-5 quicksort       : 75.4153 ms.
+HPX-5 with TL control : 30.0129 ms.
+Cilk quicksort        : 29.9339 ms. 
+OpenMP quicksort      : 155.087 ms. 
+Sequential quicksort  : 108.165 ms. 
+Built-in qsort        : 179.641 ms.
+
+Seed[0], # of elements: 1000000
+Generating random data... finish!
+HPX-5 quicksort       : 75.4687 ms.
+HPX-5 with TL control : 25.7215 ms.
+Cilk quicksort        : 31.4808 ms. 
+OpenMP quicksort      : 147.589 ms. 
+Sequential quicksort  : 154.787 ms. 
+Built-in qsort        : 179.615 ms.
+
+
+Input:[10000000]
+Seed[0], # of elements: 10000000
+Generating random data... finish!
+HPX-5 quicksort       : 838.239 ms.
+HPX-5 with TL control : 174.018 ms.
+Cilk quicksort        : 179.117 ms. 
+OpenMP quicksort      : 616.972 ms. 
+Sequential quicksort  : 1271.57 ms. 
+Built-in qsort        : 2100.15 ms.
+
+Seed[0], # of elements: 10000000
+Generating random data... finish!
+HPX-5 quicksort       : 844.02 ms.
+HPX-5 with TL control : 179.904 ms.
+Cilk quicksort        : 194.516 ms. 
+OpenMP quicksort      : 541.55 ms. 
+Sequential quicksort  : 1279.06 ms. 
+Built-in qsort        : 2098.99 ms.
+
+Seed[0], # of elements: 10000000
+Generating random data... finish!
+HPX-5 quicksort       : 838.521 ms.
+HPX-5 with TL control : 166.463 ms.
+Cilk quicksort        : 217.829 ms. 
+OpenMP quicksort      : 523.283 ms. 
+Sequential quicksort  : 1270.11 ms. 
+Built-in qsort        : 2101.67 ms.
+
+
+Input:[100000000]
+Seed[0], # of elements: 100000000
+Generating random data... finish!
+HPX-5 quicksort       : 10939.2 ms.
+HPX-5 with TL control : 1972.76 ms.
+Cilk quicksort        : 1952.34 ms. 
+OpenMP quicksort      : 4779.61 ms. 
+Sequential quicksort  : 14482.9 ms. 
+Built-in qsort        : 23921.5 ms.
+
+Seed[0], # of elements: 100000000
+Generating random data... finish!
+HPX-5 quicksort       : 10994.8 ms.
+HPX-5 with TL control : 1930.8 ms.
+Cilk quicksort        : 1890.99 ms. 
+OpenMP quicksort      : 4467.54 ms. 
+Sequential quicksort  : 14393.1 ms. 
+Built-in qsort        : 23902.5 ms.
+
+Seed[0], # of elements: 100000000
+Generating random data... finish!
+HPX-5 quicksort       : 11041.2 ms.
+HPX-5 with TL control : 1961.26 ms.
+Cilk quicksort        : 1922.59 ms. 
+OpenMP quicksort      : 4648.3 ms. 
+Sequential quicksort  : 14416.8 ms. 
+Built-in qsort        : 23925 ms.
+
+
+Input:[1000000000]
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 117979 ms.
+HPX-5 with TL control : 16165.7 ms.
+Cilk quicksort        : 17476.1 ms. 
+OpenMP quicksort      : 45792.8 ms. 
+Sequential quicksort  : 163018 ms. 
+Built-in qsort        : 272576 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 117410 ms.
+HPX-5 with TL control : 16141.8 ms.
+Cilk quicksort        : 18329.8 ms. 
+OpenMP quicksort      : 42723.4 ms. 
+Sequential quicksort  : 162227 ms. 
+Built-in qsort        : 270896 ms.
+
+Seed[0], # of elements: 1000000000
+Generating random data... finish!
+HPX-5 quicksort       : 118536 ms.
+HPX-5 with TL control : 16977.6 ms.
+Cilk quicksort        : 18730.8 ms. 
+OpenMP quicksort      : 43149.4 ms. 
+Sequential quicksort  : 161547 ms. 
+Built-in qsort        : 270360 ms.
+

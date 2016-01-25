@@ -1,0 +1,38 @@
+
+Input:[10]
+Cilk took 0.000000 sec
+Steps = 10.000000;Pi = 3.142426
+Cilk took 0.000000 sec
+Steps = 10.000000;Pi = 3.142426
+Cilk took 0.000000 sec
+Steps = 10.000000;Pi = 3.142426
+
+Input:[100]
+Cilk took 0.000000 sec
+Steps = 100.000000;Pi = 3.141601
+Cilk took 0.000000 sec
+Steps = 100.000000;Pi = 3.141601
+Cilk took 0.000000 sec
+Steps = 100.000000;Pi = 3.141601
+
+Input:[1000]
+Cilk took 0.080000 sec
+Steps = 1000.000000;Pi = 3.141593
+Cilk took 0.080000 sec
+Steps = 1000.000000;Pi = 3.141593
+Cilk took 0.070000 sec
+Steps = 1000.000000;Pi = 3.141593
+
+Input:[10000]
+Cilk took 0.030000 sec
+Steps = 10000.000000;Pi = 3.141593
+Cilk took 0.040000 sec
+Steps = 10000.000000;Pi = 3.141593
+Cilk took 0.090000 sec
+Steps = 10000.000000;Pi = 3.141593
+
+Input:[100000]
+
+Input:[1000000]
+
+Input:[10000000]

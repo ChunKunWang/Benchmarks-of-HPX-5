@@ -1,0 +1,64 @@
+
+Input:[9]
+HPX-5 9-nqueens took: 0.0045245 (s)
+RESULT_SUCCESSFUL!
+HPX-5 9-nqueens took: 0.0048816 (s)
+RESULT_SUCCESSFUL!
+HPX-5 9-nqueens took: 0.0043826 (s)
+RESULT_SUCCESSFUL!
+
+Input:[10]
+HPX-5 10-nqueens took: 0.0068412 (s)
+RESULT_SUCCESSFUL!
+HPX-5 10-nqueens took: 0.0071197 (s)
+RESULT_SUCCESSFUL!
+HPX-5 10-nqueens took: 0.0060145 (s)
+RESULT_SUCCESSFUL!
+
+Input:[11]
+HPX-5 11-nqueens took: 0.0184985 (s)
+RESULT_SUCCESSFUL!
+HPX-5 11-nqueens took: 0.0188397 (s)
+RESULT_SUCCESSFUL!
+HPX-5 11-nqueens took: 0.0204983 (s)
+RESULT_SUCCESSFUL!
+
+Input:[12]
+HPX-5 12-nqueens took: 0.0729185 (s)
+RESULT_SUCCESSFUL!
+HPX-5 12-nqueens took: 0.0750263 (s)
+RESULT_SUCCESSFUL!
+HPX-5 12-nqueens took: 0.0730841 (s)
+RESULT_SUCCESSFUL!
+
+Input:[13]
+HPX-5 13-nqueens took: 0.3347513 (s)
+RESULT_SUCCESSFUL!
+HPX-5 13-nqueens took: 0.3629856 (s)
+RESULT_SUCCESSFUL!
+HPX-5 13-nqueens took: 0.3704633 (s)
+RESULT_SUCCESSFUL!
+
+Input:[14]
+HPX-5 14-nqueens took: 2.1530207 (s)
+RESULT_SUCCESSFUL!
+HPX-5 14-nqueens took: 2.1120402 (s)
+RESULT_SUCCESSFUL!
+HPX-5 14-nqueens took: 2.0130296 (s)
+RESULT_SUCCESSFUL!
+
+Input:[15]
+HPX-5 15-nqueens took: 12.2633459 (s)
+RESULT_SUCCESSFUL!
+HPX-5 15-nqueens took: 13.1045351 (s)
+RESULT_SUCCESSFUL!
+HPX-5 15-nqueens took: 12.7275962 (s)
+RESULT_SUCCESSFUL!
+
+Input:[16]
+HPX-5 16-nqueens took: 86.0530656 (s)
+RESULT_SUCCESSFUL!
+HPX-5 16-nqueens took: 83.9721051 (s)
+RESULT_SUCCESSFUL!
+HPX-5 16-nqueens took: 87.5579744 (s)
+RESULT_SUCCESSFUL!
