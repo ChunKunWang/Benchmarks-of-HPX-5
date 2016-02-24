@@ -1,0 +1,380 @@
+Making all in contrib
+make[1]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib'
+Makefile:776: warning: overriding commands for target `check-recursive'
+Makefile:510: warning: ignoring old commands for target `check-recursive'
+Making all in libffi
+make[2]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi'
+make 'AR_FLAGS=' 'CC_FOR_BUILD=' 'CFLAGS=-O3 -ansi_alias  -Wall -fexceptions' 'CXXFLAGS=-g -O2' 'CFLAGS_FOR_BUILD=' 'CFLAGS_FOR_TARGET=' 'INSTALL=/usr/bin/install -c' 'INSTALL_DATA=/usr/bin/install -c -m 644' 'INSTALL_PROGRAM=/usr/bin/install -c' 'INSTALL_SCRIPT=/usr/bin/install -c' 'JC1FLAGS=' 'LDFLAGS=' 'LIBCFLAGS=' 'LIBCFLAGS_FOR_TARGET=' 'MAKE=make' 'MAKEINFO=/bin/sh /home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi/missing makeinfo ' 'PICFLAG=' 'PICFLAG_FOR_TARGET=' 'RUNTESTFLAGS=' 'SHELL=/bin/sh' 'exec_prefix=/home/amos/HPX/install/hpx2.1.0' 'infodir=/home/amos/HPX/install/hpx2.1.0/share/info' 'libdir=/home/amos/HPX/install/hpx2.1.0/lib' 'mandir=/home/amos/HPX/install/hpx2.1.0/share/man' 'prefix=/home/amos/HPX/install/hpx2.1.0' 'AR=ar' 'AS=as' 'CC=/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99' 'CXX=/usr/share/Modules/software/RHEL-6.5/gcc/gcc-4.8.4/bin/g++' 'LD=/usr/bin/ld -m elf_x86_64' 'NM=/usr/bin/nm -B' 'RANLIB=ranlib' 'DESTDIR=' all-recursive
+make[3]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi'
+Making all in include
+make[4]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi/include'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi/include'
+Making all in testsuite
+make[4]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi/testsuite'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi/testsuite'
+Making all in man
+make[4]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi/man'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi/man'
+make[4]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi'
+depbase=`echo src/prep_cif.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ./libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src   -O3 -ansi_alias  -Wall -fexceptions -MT src/prep_cif.lo -MD -MP -MF $depbase.Tpo -c -o src/prep_cif.lo src/prep_cif.c &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -O3 -ansi_alias -Wall -fexceptions -MT src/prep_cif.lo -MD -MP -MF src/.deps/prep_cif.Tpo -c src/prep_cif.c -o src/prep_cif.o
+depbase=`echo src/types.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ./libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src   -O3 -ansi_alias  -Wall -fexceptions -MT src/types.lo -MD -MP -MF $depbase.Tpo -c -o src/types.lo src/types.c &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -O3 -ansi_alias -Wall -fexceptions -MT src/types.lo -MD -MP -MF src/.deps/types.Tpo -c src/types.c -o src/types.o
+depbase=`echo src/raw_api.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ./libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src   -O3 -ansi_alias  -Wall -fexceptions -MT src/raw_api.lo -MD -MP -MF $depbase.Tpo -c -o src/raw_api.lo src/raw_api.c &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -O3 -ansi_alias -Wall -fexceptions -MT src/raw_api.lo -MD -MP -MF src/.deps/raw_api.Tpo -c src/raw_api.c -o src/raw_api.o
+depbase=`echo src/java_raw_api.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ./libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src   -O3 -ansi_alias  -Wall -fexceptions -MT src/java_raw_api.lo -MD -MP -MF $depbase.Tpo -c -o src/java_raw_api.lo src/java_raw_api.c &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -O3 -ansi_alias -Wall -fexceptions -MT src/java_raw_api.lo -MD -MP -MF src/.deps/java_raw_api.Tpo -c src/java_raw_api.c -o src/java_raw_api.o
+depbase=`echo src/closures.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ./libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src   -O3 -ansi_alias  -Wall -fexceptions -MT src/closures.lo -MD -MP -MF $depbase.Tpo -c -o src/closures.lo src/closures.c &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -O3 -ansi_alias -Wall -fexceptions -MT src/closures.lo -MD -MP -MF src/.deps/closures.Tpo -c src/closures.c -o src/closures.o
+depbase=`echo src/x86/ffi64.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ./libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src   -O3 -ansi_alias  -Wall -fexceptions -MT src/x86/ffi64.lo -MD -MP -MF $depbase.Tpo -c -o src/x86/ffi64.lo src/x86/ffi64.c &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -O3 -ansi_alias -Wall -fexceptions -MT src/x86/ffi64.lo -MD -MP -MF src/x86/.deps/ffi64.Tpo -c src/x86/ffi64.c -o src/x86/ffi64.o
+src/x86/ffi64.c(163): warning #589: transfer of control bypasses initialization of:
+            variable "UNITS_PER_WORD" (declared at line 219)
+            variable "words" (declared at line 220)
+    switch (type->type)
+    ^
+
+depbase=`echo src/x86/unix64.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ./libtool    --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src  -I. -I./include -Iinclude -I./src  -MT src/x86/unix64.lo -MD -MP -MF $depbase.Tpo -c -o src/x86/unix64.lo src/x86/unix64.S &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -I. -I./include -Iinclude -I./src -MT src/x86/unix64.lo -MD -MP -MF src/x86/.deps/unix64.Tpo -c src/x86/unix64.S -o src/x86/unix64.o
+/bin/sh ./libtool  --tag=CC   --mode=link /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99  -O3 -ansi_alias  -Wall -fexceptions   -o libffi_convenience.la  src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo   src/x86/ffi64.lo src/x86/unix64.lo 
+libtool: link: ar cru .libs/libffi_convenience.a  src/prep_cif.o src/types.o src/raw_api.o src/java_raw_api.o src/closures.o src/x86/ffi64.o src/x86/unix64.o
+libtool: link: ranlib .libs/libffi_convenience.a
+libtool: link: ( cd ".libs" && rm -f "libffi_convenience.la" && ln -s "../libffi_convenience.la" "libffi_convenience.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99  -O3 -ansi_alias  -Wall -fexceptions -no-undefined -version-info `grep -v '^#' ./libtool-version`    -o libffi.la -rpath /home/amos/HPX/install/hpx2.1.0/lib src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo  src/x86/ffi64.lo src/x86/unix64.lo 
+libtool: link: ar cru .libs/libffi.a  src/prep_cif.o src/types.o src/raw_api.o src/java_raw_api.o src/closures.o src/x86/ffi64.o src/x86/unix64.o
+libtool: link: ranlib .libs/libffi.a
+libtool: link: ( cd ".libs" && rm -f "libffi.la" && ln -s "../libffi.la" "libffi.la" )
+make[4]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi'
+make[3]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi'
+make[2]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/libffi'
+Making all in jemalloc
+make[2]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/jemalloc'
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/jemalloc.pic.o src/jemalloc.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/arena.pic.o src/arena.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/atomic.pic.o src/atomic.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/base.pic.o src/base.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/bitmap.pic.o src/bitmap.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/chunk.pic.o src/chunk.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/chunk_dss.pic.o src/chunk_dss.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/chunk_mmap.pic.o src/chunk_mmap.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ckh.pic.o src/ckh.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ctl.pic.o src/ctl.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/extent.pic.o src/extent.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/hash.pic.o src/hash.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/huge.pic.o src/huge.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/mb.pic.o src/mb.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/mutex.pic.o src/mutex.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/pages.pic.o src/pages.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prof.pic.o src/prof.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/quarantine.pic.o src/quarantine.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/rtree.pic.o src/rtree.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/stats.pic.o src/stats.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/tcache.pic.o src/tcache.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/util.pic.o src/util.c
+In file included from include/jemalloc/internal/jemalloc_internal.h(512),
+                 from src/util.c(23):
+include/jemalloc/internal/rtree.h(260): warning #1011: missing return statement at end of non-void function "je_rtree_get"
+  }
+  ^
+
+In file included from include/jemalloc/internal/jemalloc_internal.h(512),
+                 from src/util.c(23):
+include/jemalloc/internal/rtree.h(290): warning #1011: missing return statement at end of non-void function "je_rtree_set"
+  }
+  ^
+
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/tsd.pic.o src/tsd.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -shared -Wl,-soname,libjemalloc.so.2  -o lib/libjemalloc.so.2 src/jemalloc.pic.o src/arena.pic.o src/atomic.pic.o src/base.pic.o src/bitmap.pic.o src/chunk.pic.o src/chunk_dss.pic.o src/chunk_mmap.pic.o src/ckh.pic.o src/ctl.pic.o src/extent.pic.o src/hash.pic.o src/huge.pic.o src/mb.pic.o src/mutex.pic.o src/pages.pic.o src/prof.pic.o src/quarantine.pic.o src/rtree.pic.o src/stats.pic.o src/tcache.pic.o src/util.pic.o src/tsd.pic.o  -lpthread 
+ln -sf libjemalloc.so.2 lib/libjemalloc.so
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/jemalloc.o src/jemalloc.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/arena.o src/arena.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/atomic.o src/atomic.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/base.o src/base.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/bitmap.o src/bitmap.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/chunk.o src/chunk.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/chunk_dss.o src/chunk_dss.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/chunk_mmap.o src/chunk_mmap.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ckh.o src/ckh.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ctl.o src/ctl.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/extent.o src/extent.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/hash.o src/hash.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/huge.o src/huge.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/mb.o src/mb.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/mutex.o src/mutex.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/pages.o src/pages.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prof.o src/prof.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/quarantine.o src/quarantine.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/rtree.o src/rtree.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/stats.o src/stats.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/tcache.o src/tcache.c
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/util.o src/util.c
+In file included from include/jemalloc/internal/jemalloc_internal.h(512),
+                 from src/util.c(23):
+include/jemalloc/internal/rtree.h(260): warning #1011: missing return statement at end of non-void function "je_rtree_get"
+  }
+  ^
+
+In file included from include/jemalloc/internal/jemalloc_internal.h(512),
+                 from src/util.c(23):
+include/jemalloc/internal/rtree.h(290): warning #1011: missing return statement at end of non-void function "je_rtree_set"
+  }
+  ^
+
+
+/usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -std=gnu99 -fvisibility=hidden -O3 -funroll-loops -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/tsd.o src/tsd.c
+
+ar crus lib/libjemalloc.a src/jemalloc.o src/arena.o src/atomic.o src/base.o src/bitmap.o src/chunk.o src/chunk_dss.o src/chunk_mmap.o src/ckh.o src/ctl.o src/extent.o src/hash.o src/huge.o src/mb.o src/mutex.o src/pages.o src/prof.o src/quarantine.o src/rtree.o src/stats.o src/tcache.o src/util.o src/tsd.o
+ar crus lib/libjemalloc_pic.a src/jemalloc.pic.o src/arena.pic.o src/atomic.pic.o src/base.pic.o src/bitmap.pic.o src/chunk.pic.o src/chunk_dss.pic.o src/chunk_mmap.pic.o src/ckh.pic.o src/ctl.pic.o src/extent.pic.o src/hash.pic.o src/huge.pic.o src/mb.pic.o src/mutex.pic.o src/pages.pic.o src/prof.pic.o src/quarantine.pic.o src/rtree.pic.o src/stats.pic.o src/tcache.pic.o src/util.pic.o src/tsd.pic.o
+make[2]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib/jemalloc'
+make[2]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib'
+Makefile:776: warning: overriding commands for target `check-recursive'
+Makefile:510: warning: ignoring old commands for target `check-recursive'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib'
+make[1]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/contrib'
+Making all in libsync
+make[1]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/libsync'
+Making all in arch
+make[2]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/libsync/arch'
+/bin/sh ../../libtool    --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../libsync   -O3 -g -MT x86_64/libarch_la-nop.lo -MD -MP -MF x86_64/.deps/libarch_la-nop.Tpo -c -o x86_64/libarch_la-nop.lo `test -f 'x86_64/nop.S' || echo './'`x86_64/nop.S
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../libsync -O3 -g -MT x86_64/libarch_la-nop.lo -MD -MP -MF x86_64/.deps/libarch_la-nop.Tpo -c x86_64/nop.S -o x86_64/libarch_la-nop.o
+mv -f x86_64/.deps/libarch_la-nop.Tpo x86_64/.deps/libarch_la-nop.Plo
+/bin/sh ../../libtool    --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../libsync   -O3 -g -MT x86_64/libarch_la-cptr.lo -MD -MP -MF x86_64/.deps/libarch_la-cptr.Tpo -c -o x86_64/libarch_la-cptr.lo `test -f 'x86_64/cptr.S' || echo './'`x86_64/cptr.S
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../libsync -O3 -g -MT x86_64/libarch_la-cptr.lo -MD -MP -MF x86_64/.deps/libarch_la-cptr.Tpo -c x86_64/cptr.S -o x86_64/libarch_la-cptr.o
+mv -f x86_64/.deps/libarch_la-cptr.Tpo x86_64/.deps/libarch_la-cptr.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -pthread -fast  -O3 -g   -o libarch.la  x86_64/libarch_la-nop.lo x86_64/libarch_la-cptr.lo    
+libtool: link: ar cru .libs/libarch.a  x86_64/libarch_la-nop.o x86_64/libarch_la-cptr.o
+libtool: link: ranlib .libs/libarch.a
+libtool: link: ( cd ".libs" && rm -f "libarch.la" && ln -s "../libarch.la" "libarch.la" )
+make[2]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/libsync/arch'
+make[2]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/libsync'
+/bin/sh ../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen  -I../include   -O3 -g -MT libsync_la-locks.lo -MD -MP -MF .deps/libsync_la-locks.Tpo -c -o libsync_la-locks.lo `test -f 'locks.c' || echo './'`locks.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen -I../include -O3 -g -MT libsync_la-locks.lo -MD -MP -MF .deps/libsync_la-locks.Tpo -c locks.c -o libsync_la-locks.o
+mv -f .deps/libsync_la-locks.Tpo .deps/libsync_la-locks.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen  -I../include   -O3 -g -MT libsync_la-sr_barrier.lo -MD -MP -MF .deps/libsync_la-sr_barrier.Tpo -c -o libsync_la-sr_barrier.lo `test -f 'sr_barrier.c' || echo './'`sr_barrier.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen -I../include -O3 -g -MT libsync_la-sr_barrier.lo -MD -MP -MF .deps/libsync_la-sr_barrier.Tpo -c sr_barrier.c -o libsync_la-sr_barrier.o
+sr_barrier.c(56): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+sr_barrier.c(48): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+mv -f .deps/libsync_la-sr_barrier.Tpo .deps/libsync_la-sr_barrier.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen  -I../include   -O3 -g -MT libsync_la-two_lock_queue.lo -MD -MP -MF .deps/libsync_la-two_lock_queue.Tpo -c -o libsync_la-two_lock_queue.lo `test -f 'two_lock_queue.c' || echo './'`two_lock_queue.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen -I../include -O3 -g -MT libsync_la-two_lock_queue.lo -MD -MP -MF .deps/libsync_la-two_lock_queue.Tpo -c two_lock_queue.c -o libsync_la-two_lock_queue.o
+two_lock_queue.c(99): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(104): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(99): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(104): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(99): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(104): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(99): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(104): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(86): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(86): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(99): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(104): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(99): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+two_lock_queue.c(104): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+mv -f .deps/libsync_la-two_lock_queue.Tpo .deps/libsync_la-two_lock_queue.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen  -I../include   -O3 -g -MT libsync_la-chase_lev_ws_deque.lo -MD -MP -MF .deps/libsync_la-chase_lev_ws_deque.Tpo -c -o libsync_la-chase_lev_ws_deque.lo `test -f 'chase_lev_ws_deque.c' || echo './'`chase_lev_ws_deque.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen -I../include -O3 -g -MT libsync_la-chase_lev_ws_deque.lo -MD -MP -MF .deps/libsync_la-chase_lev_ws_deque.Tpo -c chase_lev_ws_deque.c -o libsync_la-chase_lev_ws_deque.o
+chase_lev_ws_deque.c(105): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(113): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(109): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(156): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(170): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(105): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(109): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(187): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(105): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(105): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(217): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(218): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(234): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(105): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(113): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+chase_lev_ws_deque.c(109): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+mv -f .deps/libsync_la-chase_lev_ws_deque.Tpo .deps/libsync_la-chase_lev_ws_deque.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen  -I../include   -O3 -g -MT libsync_la-backoff.lo -MD -MP -MF .deps/libsync_la-backoff.Tpo -c -o libsync_la-backoff.lo `test -f 'backoff.c' || echo './'`backoff.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen -I../include -O3 -g -MT libsync_la-backoff.lo -MD -MP -MF .deps/libsync_la-backoff.Tpo -c backoff.c -o libsync_la-backoff.o
+mv -f .deps/libsync_la-backoff.Tpo .deps/libsync_la-backoff.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen  -I../include   -O3 -g -MT libsync_la-lockable_ptr.lo -MD -MP -MF .deps/libsync_la-lockable_ptr.Tpo -c -o libsync_la-lockable_ptr.lo `test -f 'lockable_ptr.c' || echo './'`lockable_ptr.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen -I../include -O3 -g -MT libsync_la-lockable_ptr.lo -MD -MP -MF .deps/libsync_la-lockable_ptr.Tpo -c lockable_ptr.c -o libsync_la-lockable_ptr.o
+lockable_ptr.c(33): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+lockable_ptr.c(63): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+lockable_ptr.c(70): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+mv -f .deps/libsync_la-lockable_ptr.Tpo .deps/libsync_la-lockable_ptr.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen  -I../include   -O3 -g -MT libsync_la-clh_lock.lo -MD -MP -MF .deps/libsync_la-clh_lock.Tpo -c -o libsync_la-clh_lock.lo `test -f 'clh_lock.c' || echo './'`clh_lock.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen -I../include -O3 -g -MT libsync_la-clh_lock.lo -MD -MP -MF .deps/libsync_la-clh_lock.Tpo -c clh_lock.c -o libsync_la-clh_lock.o
+clh_lock.c(52): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+clh_lock.c(28): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+clh_lock.c(28): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+clh_lock.c(28): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+clh_lock.c(28): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+clh_lock.c(52): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+clh_lock.c(52): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+clh_lock.c(33): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+mv -f .deps/libsync_la-clh_lock.Tpo .deps/libsync_la-clh_lock.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen  -I../include   -O3 -g -MT libsync_la-mcs_lock.lo -MD -MP -MF .deps/libsync_la-mcs_lock.Tpo -c -o libsync_la-mcs_lock.lo `test -f 'mcs_lock.c' || echo './'`mcs_lock.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen -I../include -O3 -g -MT libsync_la-mcs_lock.lo -MD -MP -MF .deps/libsync_la-mcs_lock.Tpo -c mcs_lock.c -o libsync_la-mcs_lock.o
+mcs_lock.c(50): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+mcs_lock.c(54): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+mcs_lock.c(57): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+mcs_lock.c(69): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+mcs_lock.c(73): warning #32013: Invalid memory order specified. Defaulting to seq_cst memory order.
+mv -f .deps/libsync_la-mcs_lock.Tpo .deps/libsync_la-mcs_lock.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen  -I../include   -O3 -g -MT libsync_la-ms_queue.lo -MD -MP -MF .deps/libsync_la-ms_queue.Tpo -c -o libsync_la-ms_queue.lo `test -f 'ms_queue.c' || echo './'`ms_queue.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../include -I../ontrib/include/private/autogen -I../ontrib/include/hwloc/autogen -I../include -O3 -g -MT libsync_la-ms_queue.lo -MD -MP -MF .deps/libsync_la-ms_queue.Tpo -c ms_queue.c -o libsync_la-ms_queue.o
+mv -f .deps/libsync_la-ms_queue.Tpo .deps/libsync_la-ms_queue.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99  -O3 -g   -o libsync.la -rpath /home/amos/HPX/install/hpx2.1.0/lib libsync_la-locks.lo libsync_la-sr_barrier.lo libsync_la-two_lock_queue.lo libsync_la-chase_lev_ws_deque.lo libsync_la-backoff.lo libsync_la-lockable_ptr.lo libsync_la-clh_lock.lo libsync_la-mcs_lock.lo libsync_la-ms_queue.lo arch/libarch.la 
+libtool: link: (cd .libs/libsync.lax/libarch.a && ar x "/home/amos/HPX/hpx-2.1.0/hpx/libsync/arch/.libs/libarch.a")
+libtool: link: ar cru .libs/libsync.a  libsync_la-locks.o libsync_la-sr_barrier.o libsync_la-two_lock_queue.o libsync_la-chase_lev_ws_deque.o libsync_la-backoff.o libsync_la-lockable_ptr.o libsync_la-clh_lock.o libsync_la-mcs_lock.o libsync_la-ms_queue.o  .libs/libsync.lax/libarch.a/libarch_la-cptr.o .libs/libsync.lax/libarch.a/libarch_la-nop.o 
+libtool: link: ranlib .libs/libsync.a
+libtool: link: rm -fr .libs/libsync.lax
+libtool: link: ( cd ".libs" && rm -f "libsync.la" && ln -s "../libsync.la" "libsync.la" )
+make[2]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/libsync'
+make[1]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/libsync'
+Making all in libhpx
+make[1]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/libhpx'
+Making all in system
+make[2]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/libhpx/system'
+Making all in linux
+make[3]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/libhpx/system/linux'
+/bin/sh ../../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../../include -I../../../ontrib/include/private/autogen -I../../../ontrib/include/hwloc/autogen  -D_POSIX_C_SOURCE=200809L -D_GNU_SOURCE -I../../../include -I../../../contrib/jemalloc/include -I../../../contrib/uthash/src -I../../../contrib/valgrind/include -I../../../contrib/libffi/include  -pthread -fast  -O3 -g -MT liblinux_la-time.lo -MD -MP -MF .deps/liblinux_la-time.Tpo -c -o liblinux_la-time.lo `test -f 'time.c' || echo './'`time.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../../include -I../../../ontrib/include/private/autogen -I../../../ontrib/include/hwloc/autogen -D_POSIX_C_SOURCE=200809L -D_GNU_SOURCE -I../../../include -I../../../contrib/jemalloc/include -I../../../contrib/uthash/src -I../../../contrib/valgrind/include -I../../../contrib/libffi/include -pthread -fast -O3 -g -MT liblinux_la-time.lo -MD -MP -MF .deps/liblinux_la-time.Tpo -c time.c -o liblinux_la-time.o
+mv -f .deps/liblinux_la-time.Tpo .deps/liblinux_la-time.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../../include -I../../../ontrib/include/private/autogen -I../../../ontrib/include/hwloc/autogen  -D_POSIX_C_SOURCE=200809L -D_GNU_SOURCE -I../../../include -I../../../contrib/jemalloc/include -I../../../contrib/uthash/src -I../../../contrib/valgrind/include -I../../../contrib/libffi/include  -pthread -fast  -O3 -g -MT liblinux_la-cpu.lo -MD -MP -MF .deps/liblinux_la-cpu.Tpo -c -o liblinux_la-cpu.lo `test -f 'cpu.c' || echo './'`cpu.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../../include -I../../../ontrib/include/private/autogen -I../../../ontrib/include/hwloc/autogen -D_POSIX_C_SOURCE=200809L -D_GNU_SOURCE -I../../../include -I../../../contrib/jemalloc/include -I../../../contrib/uthash/src -I../../../contrib/valgrind/include -I../../../contrib/libffi/include -pthread -fast -O3 -g -MT liblinux_la-cpu.lo -MD -MP -MF .deps/liblinux_la-cpu.Tpo -c cpu.c -o liblinux_la-cpu.o
+mv -f .deps/liblinux_la-cpu.Tpo .deps/liblinux_la-cpu.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../../include -I../../../ontrib/include/private/autogen -I../../../ontrib/include/hwloc/autogen  -D_POSIX_C_SOURCE=200809L -D_GNU_SOURCE -I../../../include -I../../../contrib/jemalloc/include -I../../../contrib/uthash/src -I../../../contrib/valgrind/include -I../../../contrib/libffi/include  -pthread -fast  -O3 -g -MT liblinux_la-mmap.lo -MD -MP -MF .deps/liblinux_la-mmap.Tpo -c -o liblinux_la-mmap.lo `test -f 'mmap.c' || echo './'`mmap.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../../include -I../../../ontrib/include/private/autogen -I../../../ontrib/include/hwloc/autogen -D_POSIX_C_SOURCE=200809L -D_GNU_SOURCE -I../../../include -I../../../contrib/jemalloc/include -I../../../contrib/uthash/src -I../../../contrib/valgrind/include -I../../../contrib/libffi/include -pthread -fast -O3 -g -MT liblinux_la-mmap.lo -MD -MP -MF .deps/liblinux_la-mmap.Tpo -c mmap.c -o liblinux_la-mmap.o
+mv -f .deps/liblinux_la-mmap.Tpo .deps/liblinux_la-mmap.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../../include -I../../../ontrib/include/private/autogen -I../../../ontrib/include/hwloc/autogen  -D_POSIX_C_SOURCE=200809L -D_GNU_SOURCE -I../../../include -I../../../contrib/jemalloc/include -I../../../contrib/uthash/src -I../../../contrib/valgrind/include -I../../../contrib/libffi/include  -pthread -fast  -O3 -g -MT liblinux_la-usleep.lo -MD -MP -MF .deps/liblinux_la-usleep.Tpo -c -o liblinux_la-usleep.lo `test -f 'usleep.c' || echo './'`usleep.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../../include -I../../../ontrib/include/private/autogen -I../../../ontrib/include/hwloc/autogen -D_POSIX_C_SOURCE=200809L -D_GNU_SOURCE -I../../../include -I../../../contrib/jemalloc/include -I../../../contrib/uthash/src -I../../../contrib/valgrind/include -I../../../contrib/libffi/include -pthread -fast -O3 -g -MT liblinux_la-usleep.lo -MD -MP -MF .deps/liblinux_la-usleep.Tpo -c usleep.c -o liblinux_la-usleep.o
+mv -f .deps/liblinux_la-usleep.Tpo .deps/liblinux_la-usleep.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=link /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -pthread -fast  -O3 -g   -o liblinux.la  liblinux_la-time.lo liblinux_la-cpu.lo liblinux_la-mmap.lo liblinux_la-usleep.lo -lrt 
+libtool: link: ar cru .libs/liblinux.a  liblinux_la-time.o liblinux_la-cpu.o liblinux_la-mmap.o liblinux_la-usleep.o
+libtool: link: ranlib .libs/liblinux.a
+libtool: link: ( cd ".libs" && rm -f "liblinux.la" && ln -s "../liblinux.la" "liblinux.la" )
+make[3]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/libhpx/system/linux'
+make[3]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/libhpx/system'
+/bin/sh ../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include  -pthread -fast  -O3 -g -MT libsystem_la-affinity.lo -MD -MP -MF .deps/libsystem_la-affinity.Tpo -c -o libsystem_la-affinity.lo `test -f 'affinity.c' || echo './'`affinity.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include -pthread -fast -O3 -g -MT libsystem_la-affinity.lo -MD -MP -MF .deps/libsystem_la-affinity.Tpo -c affinity.c -o libsystem_la-affinity.o
+mv -f .deps/libsystem_la-affinity.Tpo .deps/libsystem_la-affinity.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include  -pthread -fast  -O3 -g -MT libsystem_la-time.lo -MD -MP -MF .deps/libsystem_la-time.Tpo -c -o libsystem_la-time.lo `test -f 'time.c' || echo './'`time.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include -pthread -fast -O3 -g -MT libsystem_la-time.lo -MD -MP -MF .deps/libsystem_la-time.Tpo -c time.c -o libsystem_la-time.o
+mv -f .deps/libsystem_la-time.Tpo .deps/libsystem_la-time.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include  -pthread -fast  -O3 -g -MT libsystem_la-topology.lo -MD -MP -MF .deps/libsystem_la-topology.Tpo -c -o libsystem_la-topology.lo `test -f 'topology.c' || echo './'`topology.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include -pthread -fast -O3 -g -MT libsystem_la-topology.lo -MD -MP -MF .deps/libsystem_la-topology.Tpo -c topology.c -o libsystem_la-topology.o
+mv -f .deps/libsystem_la-topology.Tpo .deps/libsystem_la-topology.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include  -pthread -fast  -O3 -g -MT libsystem_la-trace.lo -MD -MP -MF .deps/libsystem_la-trace.Tpo -c -o libsystem_la-trace.lo `test -f 'trace.c' || echo './'`trace.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include -pthread -fast -O3 -g -MT libsystem_la-trace.lo -MD -MP -MF .deps/libsystem_la-trace.Tpo -c trace.c -o libsystem_la-trace.o
+mv -f .deps/libsystem_la-trace.Tpo .deps/libsystem_la-trace.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -pthread -fast  -O3 -g   -o libsystem.la  libsystem_la-affinity.lo libsystem_la-time.lo libsystem_la-topology.lo libsystem_la-trace.lo linux/liblinux.la 
+libtool: link: (cd .libs/libsystem.lax/liblinux.a && ar x "/home/amos/HPX/hpx-2.1.0/hpx/libhpx/system/linux/.libs/liblinux.a")
+libtool: link: ar cru .libs/libsystem.a  libsystem_la-affinity.o libsystem_la-time.o libsystem_la-topology.o libsystem_la-trace.o  .libs/libsystem.lax/liblinux.a/liblinux_la-cpu.o .libs/libsystem.lax/liblinux.a/liblinux_la-mmap.o .libs/libsystem.lax/liblinux.a/liblinux_la-time.o .libs/libsystem.lax/liblinux.a/liblinux_la-usleep.o 
+libtool: link: ranlib .libs/libsystem.a
+libtool: link: rm -fr .libs/libsystem.lax
+libtool: link: ( cd ".libs" && rm -f "libsystem.la" && ln -s "../libsystem.la" "libsystem.la" )
+make[3]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/libhpx/system'
+make[2]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/libhpx/system'
+Making all in util
+make[2]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/libhpx/util'
+/bin/sh ../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include  -pthread -fast  -O3 -g -MT libutil_la-parser.lo -MD -MP -MF .deps/libutil_la-parser.Tpo -c -o libutil_la-parser.lo `test -f 'parser.c' || echo './'`parser.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include -pthread -fast -O3 -g -MT libutil_la-parser.lo -MD -MP -MF .deps/libutil_la-parser.Tpo -c parser.c -o libutil_la-parser.o
+mv -f .deps/libutil_la-parser.Tpo .deps/libutil_la-parser.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include  -pthread -fast  -O3 -g -MT libutil_la-options.lo -MD -MP -MF .deps/libutil_la-options.Tpo -c -o libutil_la-options.lo `test -f 'options.c' || echo './'`options.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include -pthread -fast -O3 -g -MT libutil_la-options.lo -MD -MP -MF .deps/libutil_la-options.Tpo -c options.c -o libutil_la-options.o
+mv -f .deps/libutil_la-options.Tpo .deps/libutil_la-options.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include  -pthread -fast  -O3 -g -MT libutil_la-hashstr.lo -MD -MP -MF .deps/libutil_la-hashstr.Tpo -c -o libutil_la-hashstr.lo `test -f 'hashstr.c' || echo './'`hashstr.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include -pthread -fast -O3 -g -MT libutil_la-hashstr.lo -MD -MP -MF .deps/libutil_la-hashstr.Tpo -c hashstr.c -o libutil_la-hashstr.o
+mv -f .deps/libutil_la-hashstr.Tpo .deps/libutil_la-hashstr.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include  -pthread -fast  -O3 -g -MT libutil_la-bitmap.lo -MD -MP -MF .deps/libutil_la-bitmap.Tpo -c -o libutil_la-bitmap.lo `test -f 'bitmap.c' || echo './'`bitmap.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include -pthread -fast -O3 -g -MT libutil_la-bitmap.lo -MD -MP -MF .deps/libutil_la-bitmap.Tpo -c bitmap.c -o libutil_la-bitmap.o
+mv -f .deps/libutil_la-bitmap.Tpo .deps/libutil_la-bitmap.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include  -pthread -fast  -O3 -g -MT libutil_la-env.lo -MD -MP -MF .deps/libutil_la-env.Tpo -c -o libutil_la-env.lo `test -f 'env.c' || echo './'`env.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include -pthread -fast -O3 -g -MT libutil_la-env.lo -MD -MP -MF .deps/libutil_la-env.Tpo -c env.c -o libutil_la-env.o
+mv -f .deps/libutil_la-env.Tpo .deps/libutil_la-env.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -pthread -fast  -O3 -g   -o libutil.la  libutil_la-parser.lo libutil_la-options.lo libutil_la-hashstr.lo libutil_la-bitmap.lo libutil_la-env.lo  
+libtool: link: ar cru .libs/libutil.a  libutil_la-parser.o libutil_la-options.o libutil_la-hashstr.o libutil_la-bitmap.o libutil_la-env.o
+libtool: link: ranlib .libs/libutil.a
+libtool: link: ( cd ".libs" && rm -f "libutil.la" && ln -s "../libutil.la" "libutil.la" )
+make[2]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/libhpx/util'
+Making all in boot
+make[2]: Entering directory `/home/amos/HPX/hpx-2.1.0/hpx/libhpx/boot'
+/bin/sh ../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include  -pthread -fast  -fast  -O3 -g -MT libboot_la-boot.lo -MD -MP -MF .deps/libboot_la-boot.Tpo -c -o libboot_la-boot.lo `test -f 'boot.c' || echo './'`boot.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include -pthread -fast -fast -O3 -g -MT libboot_la-boot.lo -MD -MP -MF .deps/libboot_la-boot.Tpo -c boot.c -o libboot_la-boot.o
+mv -f .deps/libboot_la-boot.Tpo .deps/libboot_la-boot.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include  -pthread -fast  -fast  -O3 -g -MT libboot_la-smp.lo -MD -MP -MF .deps/libboot_la-smp.Tpo -c -o libboot_la-smp.lo `test -f 'smp.c' || echo './'`smp.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include -pthread -fast -fast -O3 -g -MT libboot_la-smp.lo -MD -MP -MF .deps/libboot_la-smp.Tpo -c smp.c -o libboot_la-smp.o
+mv -f .deps/libboot_la-smp.Tpo .deps/libboot_la-smp.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen  -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include  -pthread -fast  -fast  -O3 -g -MT libboot_la-mpi.lo -MD -MP -MF .deps/libboot_la-mpi.Tpo -c -o libboot_la-mpi.lo `test -f 'mpi.c' || echo './'`mpi.c
+libtool: compile:  /usr/share/Modules/software/RHEL-6.5/intel/14.0.3/bin/icc -std=gnu99 -DHAVE_CONFIG_H -I. -I../../include -I../../ontrib/include/private/autogen -I../../ontrib/include/hwloc/autogen -I../../include -I../../contrib/jemalloc/include -I../../contrib/uthash/src -I../../contrib/valgrind/include -I../../contrib/libffi/include -pthread -fast -fast -O3 -g -MT libboot_la-mpi.lo -MD -MP -MF .deps/libboot_la-mpi.Tpo -c mpi.c -o libboot_la-mpi.o
+mpi.c(20): catastrophic error: cannot open source file "mpi.h"
+  #include <mpi.h>
+                  ^
+
+compilation aborted for mpi.c (code 4)
+make[2]: *** [libboot_la-mpi.lo] Error 1
+make[2]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/libhpx/boot'
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory `/home/amos/HPX/hpx-2.1.0/hpx/libhpx'
+make: *** [all-recursive] Error 1
