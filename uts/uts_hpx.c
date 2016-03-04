@@ -155,7 +155,7 @@ counter_t parallel_uts ( Node *root )
 	memcpy(&input.parent, root, sizeof(Node));
 	input.numChildren = getNumRootChildren(root);
 
-	//printf("Computing Unbalance Tree Search algorithm ");
+	printf("Computing Unbalance Tree Search algorithm ");
 
 	hpx_addr_t done = hpx_lco_future_new(sizeof(uint64_t));
 
@@ -195,7 +195,7 @@ static counter_t _uts_action(void *args, size_t size)
 	hpx_addr_t theThread = HPX_HERE;
 	hpx_addr_t threads[temp.numChildren];
 	hpx_addr_t done = hpx_lco_future_new(sizeof(uint64_t));
-	int p_size[temp.numChildren];
+	size_t p_size[temp.numChildren];
 	void *addrs[temp.numChildren];
 
 	// intialize hpx-5 lco variables
@@ -204,7 +204,7 @@ static counter_t _uts_action(void *args, size_t size)
 		threads[i] = HPX_HERE;
 		partialCount[i] = 0;
 		addrs[i] = &partialCount[i];
-		p_size[i] = sizeof(int);
+		p_size[i] = sizeof(counter_t);
 	}
 
 	// Recurse on the children
@@ -304,7 +304,7 @@ void uts_read_file ( char *filename )
 	computeGranularity = max(1,computeGranularity);
 
 	// Printing input data
-	/*
+	
 	printf("\n");
 	printf("Root branching factor                = %f\n", b_0);
 	printf("Root seed (0 <= 2^31)                = %d\n", rootId);
@@ -315,7 +315,7 @@ void uts_read_file ( char *filename )
 	printf("Compute granularity                  = %d\n", computeGranularity);
 	printf("Tree type                            = %d (%s)\n", type, uts_trees_str[type]);
 	printf("Random number generator              = "); rng_showtype();
-	*/
+	
 }
 
 void uts_show_stats( void )
@@ -342,7 +342,7 @@ int uts_check_result ( void )
 		printf( "RESULT_UNSUCCESSFUL!\n" );
 	}
 	else
-		//printf( "RESULT_SUCCESSFUL!\n" );
+		printf( "RESULT_SUCCESSFUL!\n" );
 
 	return 0;
 }
@@ -363,7 +363,7 @@ static int _uts_main_action(void *args, size_t size)
 
 	bots_number_of_tasks = parallel_uts(&temp);
 
-	//uts_show_stats();
+	uts_show_stats();
 	uts_check_result();
 
 	hpx_exit(HPX_SUCCESS);
@@ -375,6 +375,11 @@ int main(int argc, char *argv[])
 	long bots_t_end;
 	Node root; 
 	char bots_arg_file[255];
+
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _uts, _uts_action,
+			HPX_POINTER, HPX_SIZE_T);
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _uts_main, _uts_main_action,
+			HPX_POINTER, HPX_SIZE_T);
 
 	int e = hpx_init(&argc, &argv);
 	if (e) {
@@ -409,13 +414,8 @@ int main(int argc, char *argv[])
 	uts_read_file(bots_arg_file);
 
 
-	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _uts, _uts_action,
-			HPX_POINTER, HPX_SIZE_T);
-	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _uts_main, _uts_main_action,
-			HPX_POINTER, HPX_SIZE_T);
-
-	int t = hpx_run(&_uts_main, &root, sizeof(root));
+	e = hpx_run(&_uts_main, &root, sizeof(root));
 	hpx_finalize();
-	return t;
+	return e;
 }
 
