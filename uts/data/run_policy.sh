@@ -1,6 +1,7 @@
 #!/bin/sh
 command_path="../"
 input_path="../input/"
+output_path="./run_policy//"
 
 input[0]="toy.input"
 input[1]="test.input"
@@ -11,19 +12,19 @@ input[4]="medium.input"
 command="hpx-5"
 stacksize="--hpx-stacksize=262144"
 
-log[0]="log-hybrid+h"
-log[1]="log-hybrid+w"
-log[2]="log-random+h"
-log[3]="log-random+w"
-log[4]="log-hier+h"
-log[5]="log-hier+w"
+log[0]=${output_path}"log-hybrid+h"
+log[1]=${output_path}"log-hybrid+w"
+log[2]=${output_path}"log-random+h"
+log[3]=${output_path}"log-random+w"
+log[4]=${output_path}"log-hier+h"
+log[5]=${output_path}"log-hier+w"
 
 option[0]="--hpx-sched-policy=default"
-option[1]="--hpx-sched-policy=default --hpx-sched-policy=0"
+option[1]="--hpx-sched-policy=default --hpx-sched-wfthreshold=0"
 option[2]="--hpx-sched-policy=random"
-option[3]="--hpx-sched-policy=random --hpx-sched-policy=0"
+option[3]="--hpx-sched-policy=random --hpx-sched-wfthreshold=0"
 option[4]="--hpx-sched-policy=hier"
-option[5]="--hpx-sched-policy=hier --hpx-sched-policy=0"
+option[5]="--hpx-sched-policy=hier --hpx-sched-wfthreshold=0"
 
 echo -e "Create new log file."
 
