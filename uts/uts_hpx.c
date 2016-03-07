@@ -11,6 +11,8 @@
 #include "bots.h"
 #include "uts.h"
 
+//#define SHOW_INFO 
+
 static hpx_action_t _uts      = 0;
 static hpx_action_t _uts_main = 0;
 
@@ -155,8 +157,9 @@ counter_t parallel_uts ( Node *root )
 	memcpy(&input.parent, root, sizeof(Node));
 	input.numChildren = getNumRootChildren(root);
 
+#ifdef SHOW_INFO
 	printf("Computing Unbalance Tree Search algorithm ");
-
+#endif
 	hpx_addr_t done = hpx_lco_future_new(sizeof(uint64_t));
 
 	start = hpx_time_now();
@@ -304,7 +307,7 @@ void uts_read_file ( char *filename )
 	computeGranularity = max(1,computeGranularity);
 
 	// Printing input data
-	
+#ifdef SHOW_INFO
 	printf("\n");
 	printf("Root branching factor                = %f\n", b_0);
 	printf("Root seed (0 <= 2^31)                = %d\n", rootId);
@@ -315,7 +318,7 @@ void uts_read_file ( char *filename )
 	printf("Compute granularity                  = %d\n", computeGranularity);
 	printf("Tree type                            = %d (%s)\n", type, uts_trees_str[type]);
 	printf("Random number generator              = "); rng_showtype();
-	
+#endif
 }
 
 void uts_show_stats( void )
@@ -341,8 +344,10 @@ int uts_check_result ( void )
 		printf("Tree size value is non valid.\n");
 		printf( "RESULT_UNSUCCESSFUL!\n" );
 	}
+#ifdef SHOW_INFO
 	else
 		printf( "RESULT_SUCCESSFUL!\n" );
+#endif
 
 	return 0;
 }
@@ -363,7 +368,9 @@ static int _uts_main_action(void *args, size_t size)
 
 	bots_number_of_tasks = parallel_uts(&temp);
 
+#ifdef SHOW_INFO
 	uts_show_stats();
+#endif
 	uts_check_result();
 
 	hpx_exit(HPX_SUCCESS);
