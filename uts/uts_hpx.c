@@ -26,6 +26,7 @@ double bots_time_program;
 int    bots_number_of_tasks;
 char bots_resources[128];
 bots_verbose_mode_t bots_verbose_mode;
+char bots_arg_file[255];
 
 /***********************************************************
  *  Global state                                           *
@@ -243,8 +244,7 @@ static counter_t _uts_action(void *args, size_t size)
 		subtreesize += partialCount[i];
 	}
 
-	HPX_THREAD_CONTINUE(subtreesize);
-	return HPX_SUCCESS;
+	return HPX_THREAD_CONTINUE(subtreesize);
 }
 
 counter_t parTreeSearch(int depth, Node *parent, int numChildren) 
@@ -364,6 +364,8 @@ static int _uts_main_action(void *args, size_t size)
 	Node *root = (Node *)args;
 	Node temp;
 
+	uts_read_file(bots_arg_file);
+
 	uts_initRoot(&temp, type);
 
 	bots_number_of_tasks = parallel_uts(&temp);
@@ -381,7 +383,6 @@ int main(int argc, char *argv[])
 	long bots_t_start;
 	long bots_t_end;
 	Node root; 
-	char bots_arg_file[255];
 
 	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _uts, _uts_action,
 			HPX_POINTER, HPX_SIZE_T);
@@ -418,7 +419,6 @@ int main(int argc, char *argv[])
 			break;
 	}
 
-	uts_read_file(bots_arg_file);
 
 
 	e = hpx_run(&_uts_main, &root, sizeof(root));
