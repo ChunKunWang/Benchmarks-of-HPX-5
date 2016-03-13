@@ -222,6 +222,14 @@ static int _main_action(uint64_t *args, size_t size) {
 
 int main (int argc, char *argv[])
 {
+	// Register the main action
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _main, _main_action,
+			HPX_POINTER, HPX_SIZE_T);
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _parallelQuicksortHelper,
+			_parallelQuicksortHelper_action, HPX_POINTER, HPX_SIZE_T);
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _NoTLQuicksortHelper,
+			_NoTLQuicksortHelper_action, HPX_POINTER, HPX_SIZE_T);
+
 	if (hpx_init(&argc, &argv) != 0) {
 		fprintf(stderr, "HPX: failed to initialize.\n");
 		return -1;
@@ -291,15 +299,6 @@ int main (int argc, char *argv[])
 			NUM = atoi(argv[0]);
 			break;
 	}
-
-	// Register the main action
-	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _main, _main_action,
-			HPX_POINTER, HPX_SIZE_T);
-	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _parallelQuicksortHelper,
-			_parallelQuicksortHelper_action, HPX_POINTER, HPX_SIZE_T);
-	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _NoTLQuicksortHelper,
-			_NoTLQuicksortHelper_action, HPX_POINTER, HPX_SIZE_T);
-
 	// Run the main action
 	int e = hpx_run(&_main, &NUM, sizeof(NUM));
 	hpx_finalize();
@@ -454,7 +453,7 @@ static int _NoTLQuicksortHelper_action(void *threadarg, size_t size)
 		&pqs[1]
 	};
 
-	int sizes[] = {
+        size_t sizes[] = {
 		sizeof(int),
 		sizeof(int)
 	};
@@ -563,7 +562,7 @@ static int _parallelQuicksortHelper_action(void *threadarg, size_t size)
 		&pqs[1]
 	};
 
-	int sizes[] = {
+	size_t sizes[] = {
 		sizeof(int),
 		sizeof(int)
 	};
