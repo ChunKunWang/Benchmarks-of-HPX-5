@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <memory.h>
 #include <alloca.h>
+#include <time.h>
 //#include "bots.h"
 #include <omp.h>
 
@@ -113,7 +114,7 @@ void find_queens (int size)
 {
 	total_count=0;
 
-	printf("Computing %d-Queens algorithm\n", size);
+	printf("%d-Queens: ", size);
 #pragma omp parallel
 	{
 #pragma omp single
@@ -123,12 +124,18 @@ void find_queens (int size)
 			a = alloca(size * sizeof(char));
 #ifdef _OPENMP
 			double start = omp_get_wtime();;
+#else
+			clock_t start = clock();
 #endif
 			nqueens(size, 0, a, &total_count,0);
 			//printf("completed!\n");
 #ifdef _OPENMP
 			double time = omp_get_wtime() - start;
-			printf("OpenMP Work took %f sec.\n", time);
+			printf("%f sec\n", time);
+#else
+			double end = clock();
+			float time = (float)(end-start) / CLOCKS_PER_SEC;
+			printf("%f sec\n", time);
 #endif
 		}
 #pragma omp atomic
@@ -141,7 +148,7 @@ int verify_queens (int size)
 	total_count = total_count / 2;
 	//printf( "total_count = %d; solution = %d\n", total_count, solutions[size-1] );
 	if ( total_count == solutions[size-1]) {
-		printf( "RESULT_SUCCESSFUL!\n" );
+		//printf( "RESULT_SUCCESSFUL!\n" );
 		return 1;
 	}
 
