@@ -52,7 +52,7 @@ int verify_queens (int size)
 	//printf( "total_count = %d; solution = %d\n", count, solutions[size-1] );
 
 	if ( count == solutions[size-1]) {
-		printf( "RESULT_SUCCESSFUL!\n" );
+		//printf( "RESULT_SUCCESSFUL!\n" );
 		return 1;
 	}
 
@@ -140,7 +140,7 @@ static int _nqueens_action(void *args, size_t size)
 	hpx_addr_t futures[num_spawns];
 	hpx_addr_t threads[num_spawns];
 	int pqs[num_spawns];
-	int p_size[num_spawns];
+	size_t p_size[num_spawns];
 	void *addrs[num_spawns];
 
 	for(i = 0; i < num_spawns; i++) {
@@ -148,7 +148,7 @@ static int _nqueens_action(void *args, size_t size)
 		threads[i] = HPX_HERE;
 		pqs[i] = 0;
 		addrs[i] = &pqs[i];
-		p_size[i] = sizeof(int);
+		p_size[i] = sizeof(size_t);
 	}
 
 	int k=0; // counter for hpx data
@@ -209,7 +209,7 @@ static int _nqueens_main_action(int *args, size_t size)
 
 	start = hpx_time_now();
 	parallel_nqueens(n, 0, hist);
-	printf("HPX-5 %d-nqueens took: %.7f (s)\n", n, hpx_time_elapsed_ms(start)/1e3);
+	printf("%d-Queens: %.7f (s)\n", n, hpx_time_elapsed_ms(start)/1e3);
 
 	verify_queens(n);
 	hpx_exit(HPX_SUCCESS);
@@ -217,6 +217,11 @@ static int _nqueens_main_action(int *args, size_t size)
 
 int main(int argc, char *argv[]) 
 {
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _nqueens_main, _nqueens_main_action,
+			HPX_POINTER, HPX_SIZE_T);
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _nqueens, _nqueens_action,
+			HPX_POINTER, HPX_SIZE_T);
+
 	if (hpx_init(&argc, &argv) != 0) {
                 fprintf(stderr, "HPX: failed to initialize.\n");
                 return -1;
@@ -252,10 +257,6 @@ int main(int argc, char *argv[])
 		n = MAX_SIZE;
 	}
 
-	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _nqueens_main, _nqueens_main_action,
-			HPX_POINTER, HPX_SIZE_T);
-	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _nqueens, _nqueens_action,
-			HPX_POINTER, HPX_SIZE_T);
 	// run the main action
 	int e = hpx_run(&_nqueens_main, &n, sizeof(n));
         hpx_finalize();
