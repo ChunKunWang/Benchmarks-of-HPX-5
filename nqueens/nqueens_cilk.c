@@ -108,7 +108,7 @@ void find_queens (int size)
 {
 	total_count=0;
 
-	printf("Computing %d-Queens algorithm\n", size);
+	printf("%d-Queens: ", size);
 	char *a;
 
 	a = alloca(size * sizeof(char));
@@ -119,7 +119,7 @@ void find_queens (int size)
 	clock_t end = clock();
 
 	double duration = (double)(end - start) / CLOCKS_PER_SEC;
-	printf("Cilk took %f sec\n", duration);
+	printf("%f (s)\n", duration);
 
 	//printf("completed!\n");
 	total_count += mycount;
@@ -130,11 +130,11 @@ int verify_queens (int size)
 	total_count = total_count / 2;
 	//printf( "total_count = %d; solution = %d\n", total_count, solutions[size-1] );
 	if ( total_count == solutions[size-1]) {
-		printf( "RESULT_SUCCESSFUL!\n" );
+		//printf( "RESULT_SUCCESSFUL!\n" );
 		return 1;
 	}
 
-	printf( "RESULT_UNSUCCESSFUL!\n" );
+	//printf( "RESULT_UNSUCCESSFUL!\n" );
 
 	return 2;
 }
