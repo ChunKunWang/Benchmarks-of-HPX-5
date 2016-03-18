@@ -62,10 +62,10 @@ int main(int input, char **argv)
 	int   result;
 	if (input <= 1 || (input = atoi(argv[1])) <= 0) input = 3;
 	//char  line[256];
-	printf("\nRecursive Knight Tour Problem");
-	printf("\n=============================");
+	//printf("\nRecursive Knight Tour Problem");
+	//printf("\n=============================");
 	n = input;
-	printf("\n\nBoard Size ----> %d\n", n );
+	printf("Size: %d; ", n );
 	//gets(line);
 	//n = atoi(line);
 	row = 0;
@@ -89,15 +89,13 @@ int main(int input, char **argv)
 		result = trygo(top);
 #ifdef _OPENMP
 		double time = omp_get_wtime() - start;
-		printf("OpenMP Work took %f sec.\n", time);
+		printf("%f sec\n", time);
 #endif
 		if (result == FAILURE)
 			printf("\nNO SOLUTION AT ALL.");
 		else
 			;//display();
 	}
-
-	printf("\n");
 
 	return 0;
 }
