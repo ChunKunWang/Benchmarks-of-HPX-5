@@ -115,7 +115,7 @@ int _knight_main_action(int *args, size_t size) {
 	//printf("\n=============================");
 
 	n = *args;
-	printf("Board Size ----> %d\n", n );
+	printf("Size %d; ", n );
 
 	row = 0;
 	//printf( "Start Row -----> %d\n", row);
@@ -138,7 +138,7 @@ int _knight_main_action(int *args, size_t size) {
 		;//display();
 
 	//printf("\n");
-	printf("seconds: %.7f\n", elapsed);
+	printf("sec: %.7f\n", elapsed);
 	//printf("localities: %d\n", HPX_LOCALITIES);
 	//printf("threads/locality: %d\n", HPX_THREADS);
 
@@ -184,15 +184,17 @@ int  _knight_action(int *args, size_t size)
 		//}
 		//#pragma omp taskwait
 		//return found_2;
-		HPX_THREAD_CONTINUE(found_2);
+		return HPX_THREAD_CONTINUE(found_2);
 	}
 
 	//return SUCCESS;          /* all pos. visited. DONE   */
-	HPX_THREAD_CONTINUE(SUCCESS);
+	return HPX_THREAD_CONTINUE(SUCCESS);
 }
 
 int main(int argc, char *argv[])
 {
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _knight, _knight_action, HPX_POINTER, HPX_SIZE_T);
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _knight_main, _knight_main_action, HPX_POINTER, HPX_SIZE_T);
 	if (hpx_init(&argc, &argv) != 0) {
 		fprintf(stderr, "HPX: failed to initialize.\n");
 		return -1;
@@ -223,8 +225,6 @@ int main(int argc, char *argv[])
 			break;
 	}
 
-	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _knight, _knight_action, HPX_POINTER, HPX_SIZE_T);
-	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _knight_main, _knight_main_action, HPX_POINTER, HPX_SIZE_T);
 
 	int e = hpx_run(&_knight_main, &input, sizeof(input));
 	hpx_finalize();
