@@ -69,7 +69,7 @@ int main(int input, char **argv)
 	//printf("\nRecursive Knight Tour Problem");
 	//printf("\n=============================");
 	n = input;
-	printf("Board Size ----> %d\n", n );
+	printf("Size: %d; ", n );
 	//gets(line);
 	//n = atoi(line);
 	row = 0;
@@ -90,14 +90,14 @@ int main(int input, char **argv)
 	clock_t end = clock();
 
 	double duration = (double)(end - start) / CLOCKS_PER_SEC;
-	fprintf(stderr, "Cilk took %f sec\n", duration);
+	printf("%f sec\n", duration);
 
 	if (result == FAILURE)
-		printf("\nNO SOLUTION AT ALL.");
+		printf("NO SOLUTION AT ALL.\n");
 	else
 		;//display();
 
-	printf("test\n");
+	//printf("test\n");
 
 	return 0;
 }
