@@ -40,17 +40,20 @@ int main(int argc, char *argv[])
 	{
 #ifdef _OPENMP
 	double start = omp_get_wtime();;
+#else
+	clock_t start = clock();
 #endif
 	sum = pi_calculate( 0, 0 );
+	pi = step*sum;
 #ifdef _OPENMP
 	double time = omp_get_wtime() - start;
-	printf("OpenMP Work took %f sec.\n", time);
+	printf( "Steps: %f; Pi: %f; Sec: %f\n", num_steps, pi, time );
+#else
+	double end = clock();
+	float time = (float)(end-start) / CLOCKS_PER_SEC;
+	printf( "Steps: %f; Pi: %f; Sec: %f\n", num_steps, pi, time );
 #endif
 	}
-
-	pi = step*sum;
-
-	printf( "Steps = %f;Pi = %f\n", num_steps, pi );
 
 	return 0;
 }
