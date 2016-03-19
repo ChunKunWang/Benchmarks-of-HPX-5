@@ -40,11 +40,10 @@ int main(int argc, char *argv[])
 	clock_t end = clock();
 
 	double duration = (double)(end - start) / CLOCKS_PER_SEC;
-	printf("Cilk took %f sec\n", duration);
 
 	pi = step*sum;
 
-	printf( "Steps = %f;Pi = %f\n", num_steps, pi );
+	printf( "Steps = %f;Pi = %f; Sec: %f\n", num_steps, pi, duration );
 
 	return 0;
 }
