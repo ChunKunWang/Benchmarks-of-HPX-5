@@ -72,8 +72,7 @@ static int _Pi_main_action(void *args, size_t size)
 
 	pi = step*sum;
 
-	printf("Steps: %f; Pi=%f\n", PI_STEP, pi);
-	printf("seconds: %.7f\n", elapsed);
+	printf("Steps: %f; Pi=%f; Sec: %.7f\n", PI_STEP, pi, elapsed);
 	//printf("localities: %d\n", HPX_LOCALITIES);
 	//printf("threads/locality: %d\n", HPX_THREADS);
 
@@ -83,6 +82,8 @@ static int _Pi_main_action(void *args, size_t size)
 int main(int argc, char *argv[])
 {
 
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _Pi, _Pi_action, HPX_POINTER, HPX_SIZE_T);
+	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _Pi_main, _Pi_main_action, HPX_POINTER, HPX_SIZE_T);
 	if (hpx_init(&argc, &argv) != 0) {
 		fprintf(stderr, "HPX: failed to initialize.\n");
 		return -1;
@@ -112,8 +113,6 @@ int main(int argc, char *argv[])
 			break;
 	}
 
-	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _Pi, _Pi_action, HPX_POINTER, HPX_SIZE_T);
-	HPX_REGISTER_ACTION(HPX_DEFAULT, HPX_MARSHALLED, _Pi_main, _Pi_main_action, HPX_POINTER, HPX_SIZE_T);
 
 	int e = hpx_run(&_Pi_main, NULL, 0);
 	hpx_finalize();
