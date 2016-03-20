@@ -255,7 +255,9 @@ int uts_check_result ( void )
 {
 	//printf("\nbots_number_of_tasks = %d\nexp_tree_size = %llu\n",  bots_number_of_tasks, exp_tree_size); 
 	if ( bots_number_of_tasks != exp_tree_size ) {
-		printf("Tree size value is non valid.\n");
+		printf("Tree size value is non valid. [bots:%llu; exp:%llu]\n"
+					, (unsigned long long)bots_number_of_tasks
+					, (unsigned long long)exp_tree_size);
 		printf( "RESULT_UNSUCCESSFUL!\n" );
 	}
 	else
