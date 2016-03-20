@@ -19,7 +19,7 @@ touch ${log}
 
 for k in {1..10}
 do
-	${command_path}${command} ${stacksize} ${input_path}${input} >> ${log}
+	${command_path}${command} ${input_path}${input} >> ${log}
 done
 
 echo -e "Mission Complete!"
