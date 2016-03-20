@@ -284,7 +284,7 @@ int main(int argc, char *argv[])
 	int result;
 
 	result = getrlimit(RLIMIT_STACK, &rl);
-	printf ("Default Limit = %ld\n", rl.rlim_cur);
+	//printf ("Default Limit = %ld\n", rl.rlim_cur);
 	if (result == 0)
 	{
 		if (rl.rlim_cur < kStackSize)
@@ -297,7 +297,7 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	printf ("Stack Limit = %ld\n", rl.rlim_cur);
+	//printf ("Stack Limit = %ld\n", rl.rlim_cur);
 	//end of setting
 
 	
