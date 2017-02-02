@@ -2,5 +2,3 @@
 
 Seven benchmarks: fibonacci, N-Queens, Pi, knight, health, qsort, and UTS
 
-health is under constrution right now
-
